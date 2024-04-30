@@ -1,0 +1,11 @@
+.long-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    align-items: end;
+    justify-content: end;
+}
+
+.long-text-container * {
+    width: 100%;
+}
