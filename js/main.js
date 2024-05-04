@@ -33,3 +33,4 @@ function updateLinksState() {
 
 init();
 changePage(0)
+

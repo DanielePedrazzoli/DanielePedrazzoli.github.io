@@ -2,7 +2,7 @@
 
 body {
     margin: 0%;
-    color: white;
+    color: rgb(230, 230, 230);
     font-family: "poppins";
     min-height: 100vh;
     background: #1d1e1f;
@@ -60,9 +60,15 @@ nav a:hover:not(.selected) {
 
 section {
     min-height: calc(100vh - 20px);
-    margin-bottom: 20px;
+    margin: 0px 0px 100px 0px;
     width: calc(100% - 80px);
     padding: 20px;
+
+}
+
+section:last-child {
+    margin-bottom: 0px;
+
 }
 
 
@@ -81,4 +87,14 @@ section {
     nav {
         display: none;
     }
+}
+
+
+h2 {
+    color: rgb(79, 135, 162);
+}
+
+h3 {
+    color: rgb(104, 132, 146);
+
 }

@@ -1,8 +1,12 @@
-
+# 0.2.0
+- Changed project's section adding more inner section and allow display a dialog for more info avout a project
+- Created the "contact me" section. This is still not working a the moment
+- Added the databse folder that contains all the infomaration that will be displayed on the site. This allow a more dynamic approch of editing data 
+- Rewritten all file using english language. All the site now will be written only in english
 
 # 0.1.0 
-- Aggiunte altre sezioni
-- Modificato il progetto da un multi-page ad un single-page
+- Added more section
+- Chnaged project from multi page to a single page project
 
 # 0.0.1 
-- Versione iniziale
+- Initial versione
