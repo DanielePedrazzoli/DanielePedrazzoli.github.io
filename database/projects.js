@@ -1,88 +1,36 @@
 const projects = {
     "Web": [
         {
-            "name": "Simulatore game of life",
-            "link": "Project link",
-            "description": "Project description",
-            "languages": [
-                "HTML",
-                "CSS",
-                "JS"
-            ],
-            "framework": "P5js"
-        },
-        {
-            "name": "Project name",
-            "link": "Project link",
-            "description": "Project description",
+            "name": "Personal portfolio",
+            "link": "https://github.com/DanielePedrazzoli/DanielePedrazzoli.github.io",
+            "description": "This GitHub-hosted personal portfolio is built solely on static resources, facilitating easy editing and updates through resource commits. Currently, it employs raw HTML, CSS, and minimal JavaScript for animating elements and dynamically loading content from a local file acting as a database. It offers a dynamic showcase of work and expertise.",
             "languages": [
                 "HTML",
                 "CSS",
                 "JS"
             ],
             "framework": ""
-        }
+        },
     ],
     "Mobile": [
         {
-            "name": "Project name",
-            "link": "Project link",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tortor leo, vestibulum eget mauris vel, egestas consequat justo. Nam aliquet lectus nec laoreet mattis. In viverra sem nisi, ac malesuada magna venenatis vulputate.",
+            "name": "Step counter visualizer",
+            "link": "",
+            "description": "This project offers real-time visualization of data transmitted by an ESP32 via BLE. It seamlessly connects to nearby ESP32 devices, monitors data, and presents it visually. Users can easily download session data for later analysis on a PC",
             "languages": [
                 "Dart",
             ],
             "framework": "Flutter"
         }
     ],
-    "Game": [
-        {
-            "name": "Minecraft",
-            "link": "Project link",
-            "description": "Project description",
-            "languages": [
-                "TS",
-            ],
-            "framework": "Three.js"
-        },
-        {
-            "name": "Minecraft",
-            "link": "Project link",
-            "description": "Project description",
-            "languages": [
-                "Java",
-            ],
-            "framework": ""
-        }
-    ],
-    "Terminal": [
-        {
-            "name": "Translator helper",
-            "link": "Project link",
-            "description": "Project description",
-            "languages": [
-                "Dart",
-            ],
-            "framework": "framework name"
-        }
-    ],
-    "Desktop": [
-        {
-            "name": "Project name",
-            "link": "Project link",
-            "description": "Project description",
-            "languages": [
-                "Language name 1",
-                "Language name 2"
-            ],
-            "framework": "framework name"
-        }
-    ],
-
+    "Game": [],
+    "Terminal": [],
+    "Desktop": [],
     "Microcontroller": [
         {
             "name": "ESP32 step counter",
             "link": "https://github.com/DanielePedrazzoli/ESP32-step-counter",
-            "description": "The final project for my bachelor degree. In this project an ESP32 comunicate via I2C with a MPU6050 that sample data from the accelerometer and gyroscope. Then, the data are processed internally by a \"step recognition algorithm\".\nThe result of the processing will be avaiable via BLE and can be visualized with my other application for android",
+            "description": "TFor my bachelor's degree project, I developed a system where an ESP32 communicates with an MPU6050 via I2C to sample data from an accelerometer and gyroscope. The ESP32 then internally processes this data using a step recognition algorithm. The processed results are accessible via BLE and can be visualized using my `Step counter visualizer` Android application",
             "languages": [
                 "C++",
             ],

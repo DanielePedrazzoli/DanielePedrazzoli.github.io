@@ -1,3 +1,7 @@
+# 0.2.2
+- Now dialog support sisabled link
+- Edited element on database
+
 # 0.2.1
 - Minor bug fix that always showed the dialog
 
