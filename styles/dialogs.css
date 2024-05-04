@@ -1,5 +1,5 @@
 dialog {
-    position: relative;
+    position: absolute;
     min-height: 300px;
     min-width: 400px;
     max-width: 600px;
@@ -7,7 +7,7 @@ dialog {
     border-radius: 5px;
     border: none;
     background-color: #1d1e1f;
-    display: grid;
+    /* display: grid; */
 }
 
 dialog::backdrop {

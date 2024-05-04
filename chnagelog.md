@@ -1,3 +1,6 @@
+# 0.2.1
+- Minor bug fix that always showed the dialog
+
 # 0.2.0
 - Changed project's section adding more inner section and allow display a dialog for more info avout a project
 - Created the "contact me" section. This is still not working a the moment
