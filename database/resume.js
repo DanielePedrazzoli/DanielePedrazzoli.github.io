@@ -24,13 +24,6 @@ const resume = [
         "type": "work"
     },
     {
-        "text": "Laurea triennale in ingnegneria elettronica",
-        "description": "Presso Univeristà degli studi di Modena e Reggio emilia",
-        "year": "2024",
-        "type": "study"
-    }
-    ,
-    {
         "text": "presente",
         "description": "",
         "year": "",
