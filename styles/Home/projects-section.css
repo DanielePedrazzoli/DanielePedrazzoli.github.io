@@ -1,0 +1,9 @@
+.projects-section .section-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    row-gap: 48px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}

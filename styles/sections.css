@@ -1,0 +1,30 @@
+section {
+    padding: var(--section-padding);
+    display: flex;
+    flex-direction: column;
+    gap: var(--section-gap-head-body);
+}
+
+.section-head {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.section-head p {
+    margin: 0%;
+    font-weight: bold;
+    font-size: var(--font-size-section-title);
+}
+
+.section-head span {
+    margin: 0%;
+    font-size: var(--font-size-section-subtitle);
+    color: rgb(88, 88, 88);
+}
+
+.section-body {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}

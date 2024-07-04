@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/sections.css">
+    <link rel="stylesheet" href="../styles/components/buttons.css">
+    <link rel="stylesheet" href="../styles/Home/about-section.css">
+    <link rel="stylesheet" href="../styles/components/segmentedButton.css">
+    <style>
+        .carousel-container {
+            overflow: hidden;
+        }
+
+        .experience-section .section-body {
+            display: grid;
+            grid-template-columns: repeat(3, 100%);
+            width: 100%;
+            gap: 48px;
+            transform: translateX(calc((-100% - 48px) * var(--index)));
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .sub-section {
+            border: 1px solid var(--border-color);
+            padding: 32px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            height: min-content;
+        }
+    </style>
+</head>
+
+
+<body>
+    <script src="../script/segmentedButton.js" defer></script>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/pages/About.html" class="selected">About Me</a></li>
+            <li><a href="/pages/projects.html">Projects</a></li>
+            <li><a href="#contactMe">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="about-section">
+            <div class="section-head">
+                <p>Introduction</p>
+                <span>A brief introduction</span>
+            </div>
+
+            <div class="section-body">
+                <img src="../assets/icon/School.svg" alt="">
+                <div class="about-description">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita illo inventore dolor nisi
+                        quis!
+                        Cum necessitatibus laudantium id obcaecati voluptatibus, consectetur temporibus. Optio sed iusto
+                        quas est incidunt ducimus iure!Cum necessitatibus laudantium id obcaecati voluptatibus,
+                        consectetur temporibus. Optio sed iusto
+                        quas est incidunt ducimus iure!</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience-section">
+            <div class="section-head">
+                <p>Paths</p>
+            </div>
+            <div class="segmented-button">
+                <p>Studies</p>
+                <p>Works</p>
+                <p>Personal</p>
+            </div>
+
+            <div class="carousel-container">
+                <div class="section-body">
+                    <div class="sub-section">
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita illo inventore dolor
+                            nisi
+                            quis!
+                            Cum necessitatibus laudantium id obcaecati voluptatibus, consectetur temporibus. Optio sed
+                            iusto
+                            quas est incidunt ducimus iure!Cum necessitatibus laudantium id obcaecati voluptatibus,
+                            consectetur temporibus. Optio sed iusto
+                            quas est incidunt ducimus iure!</span>
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita illo inventore dolor
+                            nisi
+                            quis!
+                            Cum necessitatibus laudantium id obcaecati voluptatibus, consectetur temporibus. Optio sed
+                            iusto
+                            quas est incidunt ducimus iure!Cum necessitatibus laudantium id obcaecati voluptatibus,
+                            consectetur temporibus. Optio sed iusto
+                            quas est incidunt ducimus iure!</span>
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita illo inventore dolor
+                            nisi
+                            quis!
+                            Cum necessitatibus laudantium id obcaecati voluptatibus, consectetur temporibus. Optio sed
+                            iusto
+                            quas est incidunt ducimus iure!Cum necessitatibus laudantium id obcaecati voluptatibus,
+                            consectetur temporibus. Optio sed iusto
+                            quas est incidunt ducimus iure!</span>
+                    </div>
+                    <div class="sub-section">
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita illo inventore dolor
+                            nisi
+                            quis!
+                            Cum necessitatibus laudantium id obcaecati voluptatibus, consectetur temporibus. Optio sed
+                            iusto
+                            quas est incidunt ducimus iure!Cum necessitatibus laudantium id obcaecati voluptatibus,
+                            consectetur temporibus. Optio sed iusto
+                            quas est incidunt ducimus iure!</span>
+                    </div>
+                    <div class="sub-section">
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita illo inventore dolor
+                            nisi
+                            quis!
+                            Cum necessitatibus laudantium id obcaecati voluptatibus, consectetur temporibus. Optio sed
+                            iusto
+                            quas est incidunt ducimus iure!Cum necessitatibus laudantium id obcaecati voluptatibus,
+                            consectetur temporibus. Optio sed iusto
+                            quas est incidunt ducimus iure!</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="document-section">
+            <div class="section-head">
+                <p>Usefull documents</p>
+                <span>All document about me</span>
+            </div>
+
+            <div class="section-body">
+                <ul>
+                    <li>Document name 1</li>
+                    <li>Document name 2</li>
+                    <li>Document name 3</li>
+                    <li>Document name 4</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="footer-colum">
+                <p>Daniele Pedrazzoli</p>
+                <ul>
+                    <li><span>Electrical engineer</span></li>
+                    <li><span>Systems designer</span></li>
+                    <li><span>App developer</span></li>
+                </ul>
+            </div>
+
+            <div class="footer-colum">
+                <p>Pages</p>
+                <ul>
+                    <li><a href="/" class="selected">Home</a></li>
+                    <li><a href="/pages/About.html">About Me</a></li>
+                    <li><a href="/pages/Projects.html">Projects</a></li>
+                    <li><a href="/#contactMe">Contact Me</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-colum">
+                <p>Usefull links</p>
+
+                <div>
+                    <a href="https://github.com/DanielePedrazzoli" target="_blank"><img
+                            src="../assets/icon/github-icon.svg" alt=""></a>
+                    <a href="https://www.linkedin.com" target="_blank"><img src="../assets/icon/linkedin-icon.svg"
+                            alt=""></a>
+                    <a href="https://www.linkedin.com" target="_blank"><img src="../assets/icon/mail-icon.svg"
+                            alt=""></a>
+                </div>
+            </div>
+
+        </footer>
+
+    </main>
+
+</body>
+
+<script defer>
+
+
+    var secitonBody = document.querySelector(".experience-section").querySelector(".section-body");
+    function visualizeNewSection(index) {
+        secitonBody.style.setProperty('--index', index);
+    }
+
+
+</script>
+
+</html>

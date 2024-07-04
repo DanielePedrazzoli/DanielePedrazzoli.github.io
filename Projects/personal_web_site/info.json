@@ -1,0 +1,17 @@
+{
+    "name": "Personal web with github pages",
+    "banner": "personal-web-site.webp",
+    "compleated": false,
+    "last-update": "03/07/2024",
+    "tags": [],
+    "documets": [],
+    "repository": [
+        {
+            "name": "DanielePedrazzoli.github.io",
+            "link": "https://github.com/DanielePedrazzoli/DanielePedrazzoli.github.io",
+            "main_language": "HTML",
+            "platform": "Web",
+            "framework": "none"
+        }
+    ]
+}

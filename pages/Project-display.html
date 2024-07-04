@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/sections.css">
+    <link rel="stylesheet" href="../styles/components/buttons.css">
+    <script src="../database/Projects.js" defer></script>
+
+    <style>
+        .header-section {
+            display: grid;
+            grid-template-columns: 3fr 5fr;
+            padding-bottom: 24px;
+        }
+
+        .header-section .information-container {
+            width: 100%;
+        }
+
+        .information-container {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+        }
+
+
+        .information-container .project-name {
+            margin: 0%;
+            font-size: var(--font-size-subtitle);
+        }
+
+
+        .project-information {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: var(--font-size-lable);
+            color: grey;
+            margin-bottom: 32px;
+        }
+
+
+        .header-section .banner-container {
+            width: 100%;
+        }
+
+        .banner-container img {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 425px) {
+
+            .header-section {
+                display: grid;
+                grid-template-columns: 100%;
+                padding-bottom: 24px;
+            }
+        }
+    </style>
+
+
+    <style>
+        .tag-container {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+
+        .tag {
+            text-align: center;
+            padding: 4px 16px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            font-size: var(--font-size-lable);
+            color: white;
+        }
+
+        .coding {
+            background-color: rgb(33, 93, 133);
+
+        }
+
+        .elettronics {
+            background-color: rgb(219, 151, 6);
+        }
+
+        .platform {
+            background-color: rgb(121, 44, 154);
+        }
+    </style>
+
+    <style>
+        .description-section .section-body {
+            gap: 0px;
+        }
+
+        .description-paragraph {
+            margin: 16px 0px;
+        }
+
+        .description-paragraph p {
+            font-size: var(--font-size-body-large);
+            margin: 8px 0px;
+            color: var(--primary-color);
+            /* font-weight: 400; */
+        }
+
+        .description-paragraph {
+            font-size: var(--font-size-body);
+            letter-spacing: -0.1px;
+        }
+    </style>
+
+    <style>
+        .repository-section .section-body {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 0px;
+
+        }
+
+        .repository-section .section-body * {
+            border: 1px solid var(--border-color);
+            border-left: none;
+            border-top: none;
+            padding: 6px;
+            text-align: center;
+        }
+
+        .repository-section .section-body *:nth-child(4n+1) {
+            border-left: 1px solid var(--border-color);
+        }
+
+        .repository-section .section-body *:nth-child(-n+4) {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: normal;
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/pages/About.html">About Me</a></li>
+            <li><a href="/pages/projects.html" class="selected">Projects</a></li>
+            <li><a href="#contactMe">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="header-section">
+            <div class="banner-container">
+                <img src="" class="project-banner" alt="">
+            </div>
+            <div class="information-container">
+                <p class="project-name">Project name</p>
+                <div class="project-information">
+                    <span>
+                        last update: <span>12/12/2020</span>
+                    </span>
+                </div>
+                <div class="tag-container">
+                    <span class="tag coding">Web desing</span>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="description-section">
+            <div class="section-head">
+                <p>Description</p>
+            </div>
+
+            <div class="section-body"></div>
+        </section>
+
+
+        <section class="repository-section">
+            <div class="section-head">
+                <p>Repository</p>
+            </div>
+
+            <div class="section-body">
+                <span>Name</span>
+                <span>Main language</span>
+                <span>Platform</span>
+                <span>Framework used</span>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-colum">
+                <p>Daniele Pedrazzoli</p>
+                <ul>
+                    <li><span>Electrical engineer</span></li>
+                    <li><span>Systems designer</span></li>
+                    <li><span>App developer</span></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-colum">
+                <p>Pages</p>
+                <ul>
+                    <li><a href="/"">Home</a></li>
+                    <li><a href=" /pages/About.html">About Me</a></li>
+                    <li><a href="/pages/Projects.html">Projects</a></li>
+                    <li><a href="/#contactMe">Contact Me</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-colum">
+                <p>Usefull links</p>
+
+                <div>
+                    <a href="https://github.com/DanielePedrazzoli" target="_blank"><img
+                            src="../assets/icon/github-icon.svg" alt=""></a>
+                    <a href="https://www.linkedin.com" target="_blank"><img src="../assets/icon/linkedin-icon.svg"
+                            alt=""></a>
+                    <a href="https://www.linkedin.com" target="_blank"><img src="../assets/icon/mail-icon.svg"
+                            alt=""></a>
+                </div>
+            </div>
+
+        </footer>
+
+    </main>
+
+    <script defer>
+
+
+        window.onload = () => {
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const projectData = projects[urlParams.get('project')];
+
+            document.querySelector(".project-name").innerText = projectData.info.name
+            // document.getElementById("description").innerText = projectData.description
+            document.querySelector(".project-banner").src = "../assets/Project-images/" + projectData.info.banner
+
+            var paragraphContainer = document.querySelector(".description-section .section-body")
+
+            for (var key in projectData["paragraphs"]) {
+                // var paragraphContent = projectData["paragraphs"][key]
+                // var paragraph = paragraphContainer.appendChild(document.createElement("div"))
+                // var pTitle = paragraph.appendChild(document.createElement("p"))
+                // var pContent = paragraph.appendChild(document.createElement("span"))
+                // paragraph.classList.add("paragraph")
+
+                // pTitle.innerText = key
+                // pContent.innerHTML = paragraphContent
+
+                generateParagraph(paragraphContainer, key, projectData["paragraphs"][key])
+            }
+
+
+
+            var repoContaienr = document.querySelector(".repository-section .section-body");
+
+            for (var key in projectData.info["repository"]) {
+                var reposiotryData = projectData.info["repository"][key]
+                var n = repoContaienr.appendChild(document.createElement("a"))
+                var lanaguage = repoContaienr.appendChild(document.createElement("span"))
+                var platform = repoContaienr.appendChild(document.createElement("span"))
+                var framework = repoContaienr.appendChild(document.createElement("span"))
+
+                n.innerHTML = reposiotryData["name"];
+                n.href = reposiotryData["link"];
+                n.target = "_blank"
+                lanaguage.innerText = reposiotryData["main_language"];
+                platform.innerText = reposiotryData["platform"];
+                framework.innerText = reposiotryData["framework"];
+            }
+        }
+
+
+        function generateParagraph(parent, title, content) {
+
+            var paragraph = parent.appendChild(document.createElement("div"))
+            paragraph.classList.add("description-paragraph")
+            var pTitle = paragraph.appendChild(document.createElement("p"))
+            var pContent = paragraph.appendChild(document.createElement("span"))
+
+            pTitle.innerText = title
+            pContent.innerHTML = content
+        }
+
+
+
+    </script>
+</body>
+
+</html>

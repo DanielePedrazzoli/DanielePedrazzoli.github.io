@@ -1,3 +1,9 @@
+# 0.3.0
+- completly change the desing of the site
+- refactored css and javascript for modular structure
+- resized images
+- edit database managment
+
 # 0.2.2
 - Now dialog support sisabled link
 - Edited element on database

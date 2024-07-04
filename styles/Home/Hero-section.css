@@ -1,0 +1,17 @@
+.title-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 160px var(--section-padding);
+    background-image: url("../../assets/images/bg-hero-2.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.title-section p {
+    font-size: var(--font-size-title);
+    margin: 0%;
+}

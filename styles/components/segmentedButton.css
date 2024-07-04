@@ -1,0 +1,38 @@
+.segmented-button {
+    --border-radius: 4px;
+
+
+    display: flex;
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto 32px auto;
+}
+
+.segmented-button>* {
+    padding: 8px 32px;
+    margin: 0%;
+    background-color: #058c421b;
+    border: 1px solid #058c42c7;
+    color: rgba(0, 0, 0, 0.657);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    border-left: none;
+}
+
+.segmented-button>*:first-child {
+    border-radius: var(--border-radius) 0px 0px var(--border-radius);
+    border: 1px solid #058c42c7;
+}
+
+
+.segmented-button>*:last-child {
+    border-radius: 0px var(--border-radius) var(--border-radius) 0px;
+    border-left: none;
+}
+
+.segmented-button>*.selected {
+    background-color: var(--primary-color);
+    color: white;
+
+}

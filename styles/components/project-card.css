@@ -1,0 +1,42 @@
+.project-card {
+    border: 1px solid var(--border-color);
+    padding: 24px;
+    height: 450px;
+    border-radius: 4px;
+    display: grid;
+    grid-template-rows: 200px 100px auto 30px;
+    align-items: center;
+}
+
+.project-card span {
+    align-self: self-start;
+    font-size: var(--font-size-body-small);
+}
+
+.project-card p {
+    font-size: var(--font-size-body-large);
+
+}
+
+.project-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+.button-project-container {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card .button {
+    font-size: var(--font-size-body-small);
+    border-radius: 100px;
+    padding: 8px 16px;
+    width: max-content;
+}
