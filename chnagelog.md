@@ -1,3 +1,6 @@
+# 0.3.1
+- fix a merge conflict
+
 # 0.3.0
 - completly change the desing of the site
 - refactored css and javascript for modular structure
