@@ -47,7 +47,7 @@ async function main() {
 
     }
 
-    await fs.writeFile("./database/Projects.js", "const projects = " + JSON.stringify(mergeContent, null, 2));
+    await fs.writeFile("./database/projects.js", "const projects = " + JSON.stringify(mergeContent, null, 2));
     console.log("done");
 
 }

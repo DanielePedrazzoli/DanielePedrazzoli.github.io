@@ -1,5 +1,6 @@
 # 0.3.1
 - fix a merge conflict
+- fixed a bug with project name
 
 # 0.3.0
 - completly change the desing of the site
