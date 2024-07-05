@@ -15,7 +15,18 @@
     align-items: start;
     justify-content: space-around;
     width: 60%;
+    gap: 16px;
 }
+
+.about-description p {
+    margin: 0%;
+    font-size: var(--font-size-body-large);
+}
+
+.about-description span {
+    white-space: pre-line;
+}
+
 
 
 @media (max-width: 768px) {

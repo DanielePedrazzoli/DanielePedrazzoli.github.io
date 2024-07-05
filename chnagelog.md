@@ -1,3 +1,7 @@
+# 0.6.1
+- added some imformation about me
+- implemented most recent project
+
 # 0.6.0 
 - Added support for node and github actions
 

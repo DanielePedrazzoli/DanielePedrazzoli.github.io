@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="styles/Home/contact-section.css">
     <link rel="stylesheet" href="styles/Home/projects-section.css">
     <link rel="stylesheet" href="styles/components/project-card.css">
+    <script src="database/projects.js" defer"></script>
+    <script src="/script/spinnerPlaceholder.js" defer"></script>
+    <script src="/script/projectCard.js" defer></script>
     <style>
 
     </style>
@@ -45,12 +48,14 @@
             <div class="section-body">
                 <img src="assets/icon/School.svg" alt="">
                 <div class="about-description">
-                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita illo inventore dolor nisi
-                        quis!
-                        Cum necessitatibus laudantium id obcaecati voluptatibus, consectetur temporibus. Optio sed iusto
-                        quas est incidunt ducimus iure!Cum necessitatibus laudantium id obcaecati voluptatibus,
-                        consectetur temporibus. Optio sed iusto
-                        quas est incidunt ducimus iure!</span>
+                    <p>Hi,</p>
+                    <!--noformat-->
+                    <span> I'm Daniele Pedrazzoli, a recent graduate in Electronic Engineering (2024) from Italy.
+                        Passionate about computer science and programming, I specialize in microcontroller programming and designing electrical systems for automation projects. 
+                        My experience includes developing desktop, web, and mobile applications, particularly interfaces for microcontroller boards.
+                        I thrive on tackling new technological challenges and applying my skills to develop innovative solutions.
+                    </span>
+                    <!--noformat-->
                     <a class="button filled" href="/pages/About.html">Read more</a>
                 </div>
             </div>
@@ -63,34 +68,7 @@
                 <span>Most recent updated project</span>
             </div>
 
-            <div class="section-body">
-                <div class="project-card">
-                    <img src="assets/Project-images/step_counter.webp" alt="">
-                    <p>Step counters</p>
-                    <span>Body text for whatever you’d like to say. Add main takeaway points, quotes, anecdotes, or even
-                        a very very short story. </span>
-                    <a class="button outlined" href="/pages/Project-display.html?project=Step_counter">Read
-                        more</a>
-                </div>
-                <div class="project-card">
-                    <img src="assets/Project-images/pump_erogation.webp" alt="">
-                    <p>Pump acitons</p>
-                    <span>Body text for whatever you’d like to say. Add main takeaway points, quotes, anecdotes, or even
-                        a very very short story. </span>
-                    <a class="button outlined" href="/pages/Project-display.html?project=Pump_erogation">Read more</a>
-                </div>
-                <div class="project-card">
-                    <img src="assets/Project-images/personal-web-site.webp" alt="">
-                    <p>Personal website</p>
-                    <span>Body text for whatever you’d like to say. Add main takeaway points, quotes, anecdotes, or even
-                        a very very short story. </span>
-                    <a class="button outlined" href="/pages/Project-display.html?project=personal_web_site">Read
-                        more</a>
-                </div>
-                <div class="button-project-container">
-                    <a class="button filled" href="/pages/Projects.html">Show all projects</a>
-                </div>
-            </div>
+            <div class="section-body"></div>
         </section>
 
         <section class="contact-section" id="contactMe">
@@ -163,6 +141,75 @@
 
         </footer>
     </main>
+
+    <script defer>
+
+        window.onload = () => {
+            var parent = document.querySelector(".projects-section .section-body");
+
+            // for (var key in projects) {
+            //     var projectData = projects[key];
+            //     var cards = new ProjectCard(parent, projectData, key);
+            // }
+            // document.getElementById("numberOfProjects").innerText = Object.keys(projects).length;
+
+
+            // // Convertire l'oggetto JSON in un array di progetti
+            // const projectsArray = Object.keys(projects).map(key => ({
+            //     name: key,
+            //     ...projects[key]
+            // }));
+
+            // // Funzione per convertire la data da gg/mm/aaaa a aaaa-mm-gg
+            // const convertDate = (dateStr) => {
+            //     const [day, month, year] = dateStr.split('/');
+            //     return `${year}-${month}-${day}`;
+            // };
+
+            // // Ordinare i progetti in base alla data di ultimo aggiornamento in ordine decrescente
+            // projectsArray.sort((a, b) => new Date(convertDate(b['last-update'])) - new Date(convertDate(a['last-update'])));
+
+            // // Selezionare i primi 3 progetti
+            // const lastEditedProjects = projectsArray.slice(0, 3);
+
+            // lastEditedProjects.forEach((projectData) => {
+            //     var cards = new ProjectCard(parent, projectData, key);
+
+            // })
+
+
+            // Convertire l'oggetto JSON in un array di progetti mantenendo la chiave originale
+            const projectsArray = Object.keys(projects).map(key => ({
+                key: key,
+                ...projects[key]
+            }));
+
+            // Funzione per convertire la data da gg/mm/aaaa a aaaa-mm-gg
+            const convertDate = (dateStr) => {
+                const [day, month, year] = dateStr.split('/');
+                return `${year}-${month}-${day}`;
+            };
+
+            // Ordinare i progetti in base alla data di ultimo aggiornamento in ordine decrescente
+            projectsArray.sort((a, b) => new Date(convertDate(b['last-update'])) - new Date(convertDate(a['last-update'])));
+
+            // Selezionare i primi 3 progetti mantenendo la chiave originale
+            const lastEditedProjects = projectsArray.slice(0, 3).map(project => ({
+                [project.key]: project
+            }));
+
+            // Stampare i risultati
+            console.log(lastEditedProjects);
+
+            lastEditedProjects.forEach((projectData) => {
+                var key = Object.keys(projectData)[0];
+                var cards = new ProjectCard(parent, projectData[key], key);
+
+            })
+
+        }
+
+    </script>
 </body>
 
 

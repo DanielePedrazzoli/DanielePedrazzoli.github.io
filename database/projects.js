@@ -1,55 +1,32 @@
 const projects = {
-  "Pump_erogation": {
-    "name": "Pump erogation",
-    "banner": "pump_erogation.webp",
+  "personal_web_site": {
+    "name": "Personal web with github pages",
+    "banner": "personal-web-site.webp",
     "completed": false,
-    "last-update": "03/07/2024",
-    "descriptionLocation": "/Pump_erogation/desc.md",
+    "last-update": "5/07/2024",
+    "descriptionLocation": "/personal_web_site/desc.md",
     "tags": [],
     "documets": [],
     "repository": [
       {
-        "name": "ESP32 pump controll",
-        "link": "",
-        "main_language": "C++",
-        "platform": "Espressif ESP32",
-        "framework": "PlatformIO"
-      },
-      {
-        "name": "Weather app with ble pump controll",
-        "link": "",
-        "main_language": "Dart",
-        "platform": "Adroid/IOS",
-        "framework": "Flutter"
-      },
-      {
-        "name": "ESP32 pump controll",
-        "link": "",
-        "main_language": "C++",
-        "platform": "Espressif ESP32",
-        "framework": "PlatformIO"
-      },
-      {
-        "name": "Weather app with ble pump controll",
-        "link": "",
-        "main_language": "Dart",
-        "platform": "Adroid/IOS",
-        "framework": "Flutter"
-      },
-      {
-        "name": "ESP32 pump controll",
-        "link": "",
-        "main_language": "C++",
-        "platform": "Espressif ESP32",
-        "framework": "PlatformIO"
-      },
-      {
-        "name": "Weather app with ble pump controll",
-        "link": "",
-        "main_language": "Dart",
-        "platform": "Adroid/IOS",
-        "framework": "Flutter"
-      },
+        "name": "DanielePedrazzoli.github.io",
+        "link": "https://github.com/DanielePedrazzoli/DanielePedrazzoli.github.io",
+        "main_language": "HTML",
+        "platform": "Web",
+        "framework": "none"
+      }
+    ],
+    "briefDescription": "This is the project for my personal website, published on my public GitHub page. The site is entirely written in HTML, CSS, a..."
+  },
+  "Pump_erogation": {
+    "name": "Pump erogation",
+    "banner": "pump_erogation.webp",
+    "completed": false,
+    "last-update": "05/07/2024",
+    "descriptionLocation": "/Pump_erogation/desc.md",
+    "tags": [],
+    "documets": [],
+    "repository": [
       {
         "name": "ESP32 pump controll",
         "link": "",
@@ -99,24 +76,5 @@ const projects = {
       }
     ],
     "briefDescription": "This project is my final project for my thesis. It is a step counter device that detects the user's movement and estimates th..."
-  },
-  "personal_web_site": {
-    "name": "Personal web with github pages",
-    "banner": "personal-web-site.webp",
-    "completed": false,
-    "last-update": "03/07/2024",
-    "descriptionLocation": "/personal_web_site/desc.md",
-    "tags": [],
-    "documets": [],
-    "repository": [
-      {
-        "name": "DanielePedrazzoli.github.io",
-        "link": "https://github.com/DanielePedrazzoli/DanielePedrazzoli.github.io",
-        "main_language": "HTML",
-        "platform": "Web",
-        "framework": "none"
-      }
-    ],
-    "briefDescription": "This is the project for my personal website, published on my public GitHub page. The site is entirely written in HTML, CSS, a..."
   }
 }

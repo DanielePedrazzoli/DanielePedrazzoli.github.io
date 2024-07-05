@@ -169,24 +169,17 @@
                 <p class="project-name">Project name</p>
                 <div class="project-information">
                     <span>
-                        last update: <span>12/12/2020</span>
+                        last update: <span id="last-update">12/12/2020</span>
                     </span>
                 </div>
                 <div class="tag-container">
-                    <span class="tag coding">Web desing</span>
+                    <!-- <span class="tag coding">Web desing</span> -->
                 </div>
             </div>
 
         </section>
 
-        <!-- 
-        <section class="description-section">
-            <div class="section-head">
-                <p>Description</p>
-            </div>
 
-            <div class="section-body"></div>
-        </section> -->
         <section class="description-section">
             <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
             <zero-md class="markdown-description" src="/Projects/Pump_erogation/desc.md">
@@ -270,29 +263,13 @@
             const projectData = projects[urlParams.get('project')];
 
             document.querySelector(".project-name").innerText = projectData.name
-            // document.getElementById("description").innerText = projectData.description
             document.querySelector(".project-banner").src = "../assets/Project-images/" + projectData.banner
 
             var markdownVisualizer = document.querySelector(".markdown-description");
 
             markdownVisualizer.src = "/Projects/" + projectData.descriptionLocation
 
-            // var paragraphContainer = document.querySelector(".description-section .section-body")
-
-            // for (var key in projectData["paragraphs"]) {
-            //     // var paragraphContent = projectData["paragraphs"][key]
-            //     // var paragraph = paragraphContainer.appendChild(document.createElement("div"))
-            //     // var pTitle = paragraph.appendChild(document.createElement("p"))
-            //     // var pContent = paragraph.appendChild(document.createElement("span"))
-            //     // paragraph.classList.add("paragraph")
-
-            //     // pTitle.innerText = key
-            //     // pContent.innerHTML = paragraphContent
-
-            //     generateParagraph(paragraphContainer, key, projectData["paragraphs"][key])
-            // }
-
-
+            document.querySelector("#last-update").innerText = projectData["last-update"];
 
             var repoContaienr = document.querySelector(".repository-section .section-body");
 
@@ -311,20 +288,6 @@
                 framework.innerText = reposiotryData["framework"];
             }
         }
-
-
-        function generateParagraph(parent, title, content) {
-
-            var paragraph = parent.appendChild(document.createElement("div"))
-            paragraph.classList.add("description-paragraph")
-            var pTitle = paragraph.appendChild(document.createElement("p"))
-            var pContent = paragraph.appendChild(document.createElement("span"))
-
-            pTitle.innerText = title
-            pContent.innerHTML = content
-        }
-
-
 
     </script>
 </body>
