@@ -7,3 +7,19 @@
     align-items: center;
     justify-content: center;
 }
+
+
+@media (max-width: 768px) {
+    .projects-section .section-body {
+        gap: 8px;
+    }
+
+}
+
+
+@media (max-width: 425px) {
+    .projects-section .section-body {
+        display: flex;
+        gap: 16px;
+    }
+}

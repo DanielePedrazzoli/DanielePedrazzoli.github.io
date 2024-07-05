@@ -67,3 +67,19 @@
 .un-static-banner a {
     margin-left: 0.5ch;
 }
+
+
+@media (max-width: 768px) {
+    .contact-form {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 425px) {
+    .contact-form {
+        width: 90%;
+        padding: 8px;
+    }
+}

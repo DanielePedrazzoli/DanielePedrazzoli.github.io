@@ -15,3 +15,11 @@
     font-size: var(--font-size-title);
     margin: 0%;
 }
+
+@media (max-width: 768px) {
+    .title-section p {
+        text-align: center;
+    }
+
+
+}
