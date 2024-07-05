@@ -1,4 +1,7 @@
-# 0.3.3
+# 0.5.0
+- Added support for markdonw and simplified the parsing of projects description
+
+# 0.4.0
 - added support for mobile and small screen device
 
 # 0.3.2

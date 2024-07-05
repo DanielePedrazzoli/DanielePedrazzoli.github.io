@@ -1,8 +1,9 @@
 {
     "name": "Step counter",
     "banner": "step_counter.webp",
-    "compleated": false,
+    "completed": false,
     "last-update": "03/07/2024",
+    "descriptionLocation": "desc.md",
     "tags": [],
     "documets": [],
     "repository": [

@@ -179,13 +179,33 @@
 
         </section>
 
-
+        <!-- 
         <section class="description-section">
             <div class="section-head">
                 <p>Description</p>
             </div>
 
             <div class="section-body"></div>
+        </section> -->
+        <section class="description-section">
+            <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
+            <zero-md class="markdown-description" src="/Projects/Pump_erogation/desc.md">
+                <!-- Wrap with a <template> tag -->
+                <template>
+                    <style>
+                        * {
+                            font-size: var(--font-size-body);
+                        }
+
+                        h1 {
+                            font-size: var(--font-size-body-large);
+                            color: var(--primary-color);
+                            margin-top: 48px;
+                            margin-bottom: -8px;
+                        }
+                    </style>
+                </template>
+            </zero-md>
         </section>
 
 
@@ -238,6 +258,7 @@
 
         </footer>
 
+
     </main>
 
     <script defer>
@@ -248,31 +269,35 @@
             const urlParams = new URLSearchParams(queryString);
             const projectData = projects[urlParams.get('project')];
 
-            document.querySelector(".project-name").innerText = projectData.info.name
+            document.querySelector(".project-name").innerText = projectData.name
             // document.getElementById("description").innerText = projectData.description
-            document.querySelector(".project-banner").src = "../assets/Project-images/" + projectData.info.banner
+            document.querySelector(".project-banner").src = "../assets/Project-images/" + projectData.banner
 
-            var paragraphContainer = document.querySelector(".description-section .section-body")
+            var markdownVisualizer = document.querySelector(".markdown-description");
 
-            for (var key in projectData["paragraphs"]) {
-                // var paragraphContent = projectData["paragraphs"][key]
-                // var paragraph = paragraphContainer.appendChild(document.createElement("div"))
-                // var pTitle = paragraph.appendChild(document.createElement("p"))
-                // var pContent = paragraph.appendChild(document.createElement("span"))
-                // paragraph.classList.add("paragraph")
+            markdownVisualizer.src = "/Projects/" + projectData.descriptionLocation
 
-                // pTitle.innerText = key
-                // pContent.innerHTML = paragraphContent
+            // var paragraphContainer = document.querySelector(".description-section .section-body")
 
-                generateParagraph(paragraphContainer, key, projectData["paragraphs"][key])
-            }
+            // for (var key in projectData["paragraphs"]) {
+            //     // var paragraphContent = projectData["paragraphs"][key]
+            //     // var paragraph = paragraphContainer.appendChild(document.createElement("div"))
+            //     // var pTitle = paragraph.appendChild(document.createElement("p"))
+            //     // var pContent = paragraph.appendChild(document.createElement("span"))
+            //     // paragraph.classList.add("paragraph")
+
+            //     // pTitle.innerText = key
+            //     // pContent.innerHTML = paragraphContent
+
+            //     generateParagraph(paragraphContainer, key, projectData["paragraphs"][key])
+            // }
 
 
 
             var repoContaienr = document.querySelector(".repository-section .section-body");
 
-            for (var key in projectData.info["repository"]) {
-                var reposiotryData = projectData.info["repository"][key]
+            for (var key in projectData["repository"]) {
+                var reposiotryData = projectData["repository"][key]
                 var n = repoContaienr.appendChild(document.createElement("a"))
                 var lanaguage = repoContaienr.appendChild(document.createElement("span"))
                 var platform = repoContaienr.appendChild(document.createElement("span"))

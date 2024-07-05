@@ -14,8 +14,8 @@ class ProjectCard {
 
         const bannerImg = card.appendChild(document.createElement("img"))
 
-        if (this.projectData.info.banner != "") {
-            bannerImg.src = "../assets/Project-images/" + this.projectData.info.banner
+        if (this.projectData.banner != "") {
+            bannerImg.src = "../assets/Project-images/" + this.projectData.banner
         } else {
             bannerImg.src = "https://picsum.photos/200"
         }
@@ -30,11 +30,11 @@ class ProjectCard {
 
 
         const title = card.appendChild(document.createElement("p"));
-        title.innerText = this.projectData.info.name;
+        title.innerText = this.projectData.name;
 
 
         const description = card.appendChild(document.createElement("span"));
-        description.innerText = this.limitText(this.projectData.description, 150);
+        description.innerText = this.projectData.briefDescription
 
 
 

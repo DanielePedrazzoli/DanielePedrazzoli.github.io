@@ -16,4 +16,6 @@ The activation time can be set via BLE or obtained from the internet through WiF
 - It hasn't rained during the day.
 - It isn't currently raining.
 - There isn't a high probability of rain within the set number of hours (default: 4 hours).
+
 If all conditions are met, the dispensing occurs at the scheduled time. During the dispensing period (which defaults to 5 minutes but is adjustable), the weather is continuously monitored to check for rain. If it starts raining, the dispensing is interrupted.
+
