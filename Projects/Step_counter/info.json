@@ -27,6 +27,48 @@
             "main_language": "Dart",
             "platform": "Windows/MacOS/Linux",
             "framework": "Flutter"
+        },
+        {
+            "name": "ESP32 step counter",
+            "link": "",
+            "main_language": "C++",
+            "platform": "Espressif ESP32",
+            "framework": "PlatformIO"
+        },
+        {
+            "name": "Step counter app",
+            "link": "",
+            "main_language": "Dart",
+            "platform": "Adroid/IOS",
+            "framework": "Flutter"
+        },
+        {
+            "name": "Step counter visualizer",
+            "link": "",
+            "main_language": "Dart",
+            "platform": "Windows/MacOS/Linux",
+            "framework": "Flutter"
+        },
+        {
+            "name": "ESP32 step counter",
+            "link": "",
+            "main_language": "C++",
+            "platform": "Espressif ESP32",
+            "framework": "PlatformIO"
+        },
+        {
+            "name": "Step counter app",
+            "link": "",
+            "main_language": "Dart",
+            "platform": "Adroid/IOS",
+            "framework": "Flutter"
+        },
+        {
+            "name": "Step counter visualizer",
+            "link": "",
+            "main_language": "Dart",
+            "platform": "Windows/MacOS/Linux",
+            "framework": "Flutter"
         }
     ]
 }
