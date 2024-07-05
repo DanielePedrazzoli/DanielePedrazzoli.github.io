@@ -1,0 +1,25 @@
+* {
+    font-size: var(--font-size-body);
+}
+
+h1 {
+    font-size: var(--font-size-section-title);
+    font-weight: normal;
+
+}
+
+h2 {
+    font-size: var(--font-size-body-large);
+    color: var(--primary-color);
+
+}
+
+h2:not(:first-child) {
+    margin-top: 48px;
+}
+
+
+h3 {
+    font-size: var(--font-size-body);
+    font-weight: normal;
+}

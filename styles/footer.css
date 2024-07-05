@@ -31,6 +31,12 @@ footer {
     font-size: var(--font-size-body-large);
     margin-bottom: 8px;
     color: white;
+
+}
+
+.footer-colum span {
+    color: rgb(245, 245, 245);
+    font-size: var(--font-size-body-small);
 }
 
 footer a {

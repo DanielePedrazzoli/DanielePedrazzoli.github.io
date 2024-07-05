@@ -1,3 +1,8 @@
+# 0.6.2
+- added information in "About Me" page
+- added support for markdonw in "About Me" page and included all text as static markdown instead of html text
+- changed some style for better visualizzation
+
 # 0.6.1
 - added some imformation about me
 - implemented most recent project

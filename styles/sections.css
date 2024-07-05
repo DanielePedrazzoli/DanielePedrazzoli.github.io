@@ -13,14 +13,14 @@ section {
 
 .section-head p {
     margin: 0%;
-    font-weight: bold;
+    color: var(--primary-color);
     font-size: var(--font-size-section-title);
 }
 
 .section-head span {
     margin: 0%;
     font-size: var(--font-size-section-subtitle);
-    color: rgb(88, 88, 88);
+    color: rgb(150, 150, 150);
 }
 
 .section-body {
