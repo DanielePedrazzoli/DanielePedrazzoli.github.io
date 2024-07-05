@@ -1,3 +1,6 @@
+# 0.6.0 
+- Added support for node and github actions
+
 # 0.5.0
 - Added support for markdonw and simplified the parsing of projects description
 
