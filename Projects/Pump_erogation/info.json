@@ -2,53 +2,11 @@
     "name": "Pump erogation",
     "banner": "pump_erogation.webp",
     "completed": false,
-    "last-update": "03/07/2024",
+    "last-update": "05/07/2024",
     "descriptionLocation": "desc.md",
     "tags": [],
     "documets": [],
     "repository": [
-        {
-            "name": "ESP32 pump controll",
-            "link": "",
-            "main_language": "C++",
-            "platform": "Espressif ESP32",
-            "framework": "PlatformIO"
-        },
-        {
-            "name": "Weather app with ble pump controll",
-            "link": "",
-            "main_language": "Dart",
-            "platform": "Adroid/IOS",
-            "framework": "Flutter"
-        },
-        {
-            "name": "ESP32 pump controll",
-            "link": "",
-            "main_language": "C++",
-            "platform": "Espressif ESP32",
-            "framework": "PlatformIO"
-        },
-        {
-            "name": "Weather app with ble pump controll",
-            "link": "",
-            "main_language": "Dart",
-            "platform": "Adroid/IOS",
-            "framework": "Flutter"
-        },
-        {
-            "name": "ESP32 pump controll",
-            "link": "",
-            "main_language": "C++",
-            "platform": "Espressif ESP32",
-            "framework": "PlatformIO"
-        },
-        {
-            "name": "Weather app with ble pump controll",
-            "link": "",
-            "main_language": "Dart",
-            "platform": "Adroid/IOS",
-            "framework": "Flutter"
-        },
         {
             "name": "ESP32 pump controll",
             "link": "",
