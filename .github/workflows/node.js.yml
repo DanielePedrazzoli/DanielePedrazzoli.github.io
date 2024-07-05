@@ -13,6 +13,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          persist-credentials: false  # Aggiungi questo per evitare problemi di autorizzazione
+          fetch-depth: 0  # Assicurati di avere l'intera cronologia dei commit
 
       - name: Use Node.js
         uses: actions/setup-node@v4
