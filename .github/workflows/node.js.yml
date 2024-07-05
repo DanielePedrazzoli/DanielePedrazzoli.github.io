@@ -23,7 +23,7 @@ jobs:
         run: npm install
 
       - name: Run build script
-        run: node path/to/your/script.js
+        run: npm run build
 
       - name: Check generated file
         run: cat ./database/projects.js
