@@ -3,53 +3,11 @@ const projects = {
     "name": "Pump erogation",
     "banner": "pump_erogation.webp",
     "completed": false,
-    "last-update": "03/07/2024",
+    "last-update": "05/07/2024",
     "descriptionLocation": "/Pump_erogation/desc.md",
     "tags": [],
     "documets": [],
     "repository": [
-      {
-        "name": "ESP32 pump controll",
-        "link": "",
-        "main_language": "C++",
-        "platform": "Espressif ESP32",
-        "framework": "PlatformIO"
-      },
-      {
-        "name": "Weather app with ble pump controll",
-        "link": "",
-        "main_language": "Dart",
-        "platform": "Adroid/IOS",
-        "framework": "Flutter"
-      },
-      {
-        "name": "ESP32 pump controll",
-        "link": "",
-        "main_language": "C++",
-        "platform": "Espressif ESP32",
-        "framework": "PlatformIO"
-      },
-      {
-        "name": "Weather app with ble pump controll",
-        "link": "",
-        "main_language": "Dart",
-        "platform": "Adroid/IOS",
-        "framework": "Flutter"
-      },
-      {
-        "name": "ESP32 pump controll",
-        "link": "",
-        "main_language": "C++",
-        "platform": "Espressif ESP32",
-        "framework": "PlatformIO"
-      },
-      {
-        "name": "Weather app with ble pump controll",
-        "link": "",
-        "main_language": "Dart",
-        "platform": "Adroid/IOS",
-        "framework": "Flutter"
-      },
       {
         "name": "ESP32 pump controll",
         "link": "",
@@ -104,7 +62,7 @@ const projects = {
     "name": "Personal web with github pages",
     "banner": "personal-web-site.webp",
     "completed": false,
-    "last-update": "03/07/2024",
+    "last-update": "05/07/2024",
     "descriptionLocation": "/personal_web_site/desc.md",
     "tags": [],
     "documets": [],
