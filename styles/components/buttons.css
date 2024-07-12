@@ -29,3 +29,8 @@
     text-align: center;
     text-decoration: none;
 }
+
+.button:hover {
+    color: white;
+    background-color: var(--primary-color);
+}

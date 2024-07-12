@@ -1,3 +1,7 @@
+# 0.6.3
+- Minor adjustment of text
+- Minor changes about line height and general style of the text
+
 # 0.6.2
 - added information in "About Me" page
 - added support for markdonw in "About Me" page and included all text as static markdown instead of html text

@@ -9,12 +9,14 @@
     background-position: center;
     background-size: cover;
     color: white;
+
 }
 
 .title-section p {
     font-size: var(--font-size-title);
     margin: 0%;
-    /* letter-spacing: -1px; */
+    letter-spacing: -1px;
+    line-height: 48px;
     color: white;
 }
 
@@ -22,6 +24,7 @@
     font-size: var(--font-size-subtitle);
     margin: 0%;
     /* letter-spacing: -1px; */
+    line-height: 48px;
     color: white;
 }
 

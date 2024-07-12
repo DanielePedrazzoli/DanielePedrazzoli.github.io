@@ -1,16 +1,21 @@
 * {
     font-size: var(--font-size-body);
+    line-height: 32px;
+
 }
 
 h1 {
     font-size: var(--font-size-section-title);
     font-weight: normal;
+    line-height: 28px;
 
 }
 
 h2 {
     font-size: var(--font-size-body-large);
     color: var(--primary-color);
+    line-height: 28px;
+
 
 }
 
@@ -21,5 +26,6 @@ h2:not(:first-child) {
 
 h3 {
     font-size: var(--font-size-body);
+    line-height: 28px;
     font-weight: normal;
 }
