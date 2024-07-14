@@ -1,3 +1,6 @@
+# 0.7.0
+- Added a new project: `Serial plotter`
+
 # 0.6.3
 - Minor adjustment of text
 - Minor changes about line height and general style of the text

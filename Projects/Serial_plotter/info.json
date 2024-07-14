@@ -1,0 +1,18 @@
+{
+    "name": "Serial plotter",
+    "banner": "image-not-found.webp",
+    "completed": false,
+    "last-update": "15/07/2024",
+    "descriptionLocation": "desc.md",
+    "tags": [],
+    "documets": [],
+    "repository": [
+        {
+            "name": "Serial plotter",
+            "link": "https://github.com/DanielePedrazzoli/Serial-plotter",
+            "main_language": "Dart",
+            "platform": "Windows/MacOS/Linux",
+            "framework": "Flutter"
+        }
+    ]
+}
