@@ -25,6 +25,25 @@ const projects = {
     ],
     "briefDescription": "This project aims to use an ESP32 with both WiFi and BLE connectivity. The ..."
   },
+  "Serial_plotter": {
+    "name": "Serial plotter",
+    "banner": "image-not-found.webp",
+    "completed": false,
+    "last-update": "15/07/2024",
+    "descriptionLocation": "/Serial_plotter/desc.md",
+    "tags": [],
+    "documets": [],
+    "repository": [
+      {
+        "name": "Serial plotter",
+        "link": "https://github.com/DanielePedrazzoli/Serial-plotter",
+        "main_language": "Dart",
+        "platform": "Windows/MacOS/Linux",
+        "framework": "Flutter"
+      }
+    ],
+    "briefDescription": "This projects act as a serial endpoint in a comunciation. It's used in a co..."
+  },
   "Step_counter": {
     "name": "Step counter",
     "banner": "step_counter.webp",
