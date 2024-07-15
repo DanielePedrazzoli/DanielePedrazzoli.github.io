@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title id="DocumentTitle">Document</title>
 
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/nav.css">
@@ -257,6 +257,9 @@
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
             const projectData = projects[urlParams.get('project')];
+
+            document.querySelector("#DocumentTitle").innerText = "Projects -" + projectData.name
+
 
             document.querySelector(".project-name").innerText = projectData.name
             document.querySelector(".project-banner").src = "../assets/Project-images/" + projectData.banner
