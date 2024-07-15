@@ -1,3 +1,7 @@
+# 0.7.1
+- Renamed changelog file (there was a typo in the file's name)
+- Re-written the description of "Serial Plotter" project
+
 # 0.7.0
 - Added a new project: `Serial plotter`
 
