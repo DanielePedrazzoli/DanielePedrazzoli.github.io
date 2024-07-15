@@ -42,7 +42,7 @@ const projects = {
         "framework": "Flutter"
       }
     ],
-    "briefDescription": "This projects act as a serial endpoint in a comunciation. It's used in a co..."
+    "briefDescription": "This project is a \"Serial Plotter\" capable of graphically displaying data r..."
   },
   "Step_counter": {
     "name": "Step counter",
