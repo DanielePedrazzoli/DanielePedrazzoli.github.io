@@ -1,3 +1,6 @@
+# 0.8.0
+- Added information about "Pump erogation" project 
+
 # 0.7.1
 - Renamed changelog file (there was a typo in the file's name)
 - Re-written the description of "Serial Plotter" project

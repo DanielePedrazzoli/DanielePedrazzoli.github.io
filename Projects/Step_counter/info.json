@@ -12,7 +12,7 @@
             "link": "",
             "main_language": "C++",
             "platform": "Espressif ESP32",
-            "framework": "PlatformIO"
+            "framework": "Arduino"
         },
         {
             "name": "Step counter app",

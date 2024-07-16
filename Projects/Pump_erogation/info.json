@@ -9,16 +9,16 @@
     "repository": [
         {
             "name": "ESP32 pump controll",
-            "link": "",
+            "link": "https://github.com/DanielePedrazzoli/ESP32-pump-control-ble",
             "main_language": "C++",
             "platform": "Espressif ESP32",
-            "framework": "PlatformIO"
+            "framework": "Arduino"
         },
         {
             "name": "Weather app with ble pump controll",
-            "link": "",
+            "link": "https://github.com/DanielePedrazzoli/pump-action-app",
             "main_language": "Dart",
-            "platform": "Adroid/IOS",
+            "platform": "Adroid",
             "framework": "Flutter"
         }
     ]

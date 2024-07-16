@@ -1,4 +1,23 @@
 const projects = {
+  "personal_web_site": {
+    "name": "Personal web with github pages",
+    "banner": "personal-web-site.webp",
+    "completed": false,
+    "last-update": "5/07/2024",
+    "descriptionLocation": "/personal_web_site/desc.md",
+    "tags": [],
+    "documets": [],
+    "repository": [
+      {
+        "name": "DanielePedrazzoli.github.io",
+        "link": "https://github.com/DanielePedrazzoli/DanielePedrazzoli.github.io",
+        "main_language": "HTML",
+        "platform": "Web",
+        "framework": "none"
+      }
+    ],
+    "briefDescription": "This is the project for my personal website, published on my public GitHub ..."
+  },
   "Pump_erogation": {
     "name": "Pump erogation",
     "banner": "pump_erogation.webp",
@@ -10,20 +29,20 @@ const projects = {
     "repository": [
       {
         "name": "ESP32 pump controll",
-        "link": "",
+        "link": "https://github.com/DanielePedrazzoli/ESP32-pump-control-ble",
         "main_language": "C++",
         "platform": "Espressif ESP32",
         "framework": "PlatformIO"
       },
       {
         "name": "Weather app with ble pump controll",
-        "link": "",
+        "link": "https://github.com/DanielePedrazzoli/pump-action-app",
         "main_language": "Dart",
         "platform": "Adroid/IOS",
         "framework": "Flutter"
       }
     ],
-    "briefDescription": "This project aims to use an ESP32 with both WiFi and BLE connectivity. The ..."
+    "briefDescription": "This project aims to use an ESP32 board to control an external irrigation p..."
   },
   "Serial_plotter": {
     "name": "Serial plotter",
@@ -76,24 +95,5 @@ const projects = {
       }
     ],
     "briefDescription": "This project is my final project for my thesis. It is a step counter device..."
-  },
-  "personal_web_site": {
-    "name": "Personal web with github pages",
-    "banner": "personal-web-site.webp",
-    "completed": false,
-    "last-update": "5/07/2024",
-    "descriptionLocation": "/personal_web_site/desc.md",
-    "tags": [],
-    "documets": [],
-    "repository": [
-      {
-        "name": "DanielePedrazzoli.github.io",
-        "link": "https://github.com/DanielePedrazzoli/DanielePedrazzoli.github.io",
-        "main_language": "HTML",
-        "platform": "Web",
-        "framework": "none"
-      }
-    ],
-    "briefDescription": "This is the project for my personal website, published on my public GitHub ..."
   }
 }
