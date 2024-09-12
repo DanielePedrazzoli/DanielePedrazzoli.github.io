@@ -27,7 +27,7 @@ const projects = {
   },
   "Serial_plotter": {
     "name": "Serial plotter",
-    "banner": "image-not-found.webp",
+    "banner": "/Serial_plotter/data reciving.webp",
     "completed": false,
     "last-update": "15/07/2024",
     "descriptionLocation": "/Serial_plotter/desc.md",
