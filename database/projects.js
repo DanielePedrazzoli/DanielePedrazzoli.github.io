@@ -1,4 +1,23 @@
 const projects = {
+  "personal_web_site": {
+    "name": "Personal web with github pages",
+    "banner": "personal-web-site.webp",
+    "completed": false,
+    "last-update": "5/07/2024",
+    "descriptionLocation": "/personal_web_site/desc.md",
+    "tags": [],
+    "documets": [],
+    "repository": [
+      {
+        "name": "DanielePedrazzoli.github.io",
+        "link": "https://github.com/DanielePedrazzoli/DanielePedrazzoli.github.io",
+        "main_language": "HTML",
+        "platform": "Web",
+        "framework": "none"
+      }
+    ],
+    "briefDescription": "This is the project for my personal website, published on my public GitHub ..."
+  },
   "Pump_erogation": {
     "name": "Pump erogation",
     "banner": "pump_erogation.webp",
@@ -27,7 +46,7 @@ const projects = {
   },
   "Serial_plotter": {
     "name": "Serial plotter",
-    "banner": "image-not-found.webp",
+    "banner": "/Serial_plotter/data reciving.webp",
     "completed": false,
     "last-update": "15/07/2024",
     "descriptionLocation": "/Serial_plotter/desc.md",
@@ -76,24 +95,5 @@ const projects = {
       }
     ],
     "briefDescription": "This project is my final project for my thesis. It is a step counter device..."
-  },
-  "personal_web_site": {
-    "name": "Personal web with github pages",
-    "banner": "personal-web-site.webp",
-    "completed": false,
-    "last-update": "5/07/2024",
-    "descriptionLocation": "/personal_web_site/desc.md",
-    "tags": [],
-    "documets": [],
-    "repository": [
-      {
-        "name": "DanielePedrazzoli.github.io",
-        "link": "https://github.com/DanielePedrazzoli/DanielePedrazzoli.github.io",
-        "main_language": "HTML",
-        "platform": "Web",
-        "framework": "none"
-      }
-    ],
-    "briefDescription": "This is the project for my personal website, published on my public GitHub ..."
   }
 }
