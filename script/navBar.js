@@ -16,9 +16,9 @@ class Navbar {
 
         // desktop
         this.desktopNav = parent.appendChild(document.createElement("nav"))
-        var warning = this.desktopNav.appendChild(document.createElement("p"))
-        warning.id = "warning";
-        warning.innerText = "Site still under construction";
+        // var warning = this.desktopNav.appendChild(document.createElement("p"))
+        // warning.id = "warning";
+        // warning.innerText = "Site still under construction";
 
         var ul = this.desktopNav.appendChild(document.createElement("ul"));
 

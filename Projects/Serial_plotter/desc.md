@@ -14,47 +14,30 @@ To simplify implementation, the [circular_buffer](https://pub.dev/packages/circu
 The code follows the MVC (Model-View-Controller) pattern.
 
 # Configuration
+Older versions of this plotter required manual configuration, but newer versions automatically adjust based on received data.
 
-To function, the plotter must be configured.Once connected to a device, the device must send a configuration command using the format `--config-plot:` followed by the names of the charts to be displayed.
-
-This command configures the plotter with the necessary information and sets default values for internal variables.
-
-Each field must be separated by a comma `,` (this setting is dynamic and can be changed). Fields can contain spaces.
-
-### Examples
-
-```
---config-plot:Chart_Name_1,ChartName_1,chart name 3
-```
-
+# Connecting 
+The application scans for connected devices capable of serial communication. On the initial page, you can select the port and baud rate for the communication.
 
 # Data Receiving
+Once a successful connection is established, the application begins listening to the serial port. Messages starting with # are interpreted as chart values, while other data is stored without special processing. All communication history is saved in an internal buffer and can be exported.
 
-The application receives data via serial and displays it on the monitor to the right of the window. If a command starts with the key `--plot:`, it will not be shown on the monitor but will be interpreted as a value to be added to the chart. The syntax is identical to configuration commands:
-- Each field must be separated by a comma
-- Each field can be an integer or a float, provided the `.` is used as the decimal separator
-- It is not necessary to send the exact number of configured values. If 4 charts are configured but only 2 values are sent, the first 2 charts will receive new values, and the other 2 will receive a 0. Conversely, if 6 values are sent instead of 4, the last 2 will be ignored.
+# Multiple plots
+In this new version you can now add multiple plots on the same chart page. The application can recognize multiple data streams and display each as a separate plot. 
+To add a new plot, right-click on the existing plot.
 
-_**Note**:_ All charts update simultaneously, so each time a value is sent, it corresponds to adding a value to each chart.
+# Signal Analysis
+The new version includes an FFT feature for signal analysis, allowing you to identify specific frequencies in your signal. 
+This is useful for designing filters or experimenting with signal processing.
+Note that this feature is still under development and may not be entirely stable.
 
-### Example
-```
---plot:0.2,5,90
-```
+# Export value
+All received values can be exported to a .csv file. The export menu simplifies this process and includes options to:
 
-# Data Sending
+- Edit the separator character
+- Display the number of values to be exported
+- Show a preview of the data
+- Separate non-chart values
+- Collapse multiple spaces in messages (e.g., "A lazy dog" becomes "A lazy dog")
+- Choose between exporting as .txt or .csv file
 
-Data is sent by converting the string to ASCII characters and sending the resulting array.
-
-# Todo list
-Here are some possible or planned improvements:
-
-- Modify the value separator character (default: `,`)
-- Settings page
-- Improve feedback for connection and disconnection operations
-- Ability to pause the chart and analyze points
-- Ability to export data to a csv file
-- Ability to choose the number of points on the X-axis of the chart(default: 500)
-- Improve the visualization of received messages on serial monitor
-- Enhance the theme and add color to the screen
-- Remove the dependency on the _circular_buffer_ library to optimize the code  (using Flutter's [ListQueue](https://api.flutter.dev/flutter/dart-collection/ListQueue-class.html) might be more efficient)

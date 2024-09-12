@@ -1,3 +1,11 @@
+# 1.0.0
+- Added image of me and my CV that can now be donwloaded
+- Improved the footer of the page using the custom element in HTML. This will drastically reduce the mantaining of the HTML code
+- Updated some project
+- Added external link to other page like linkedin in the footer
+- removed the `under construction` banner
+
+
 # 0.8.0
 - Added information about "Pump erogation" project 
 

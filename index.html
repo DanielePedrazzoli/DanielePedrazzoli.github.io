@@ -7,7 +7,6 @@
     <title>Home</title>
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/nav.css">
-    <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/sections.css">
     <link rel="stylesheet" href="styles/components/buttons.css">
     <link rel="stylesheet" href="styles/Home/Hero-section.css">
@@ -24,15 +23,25 @@
     </style>
 
     <script src="/script/navBar.js" defer></script>
+    <script type="module" src="/script/footer-element.js" defer></script>
 </head>
 
+<style>
+    div.photo {
+        background-image: url("../assets/images/photo.png");
+        background-size: 110%;
+        background-repeat: no-repeat;
+        background-position: center top;
+        height: 250px;
+        aspect-ratio: 1 / 1;
+    }
+</style>
 
 
 <body>
     <div class="navbar-container" selected="Home"> </div>
 
     <main>
-
         <section class="title-section">
             <p>Pedrazzoli Daniele</p>
             <span>Electrical Engineer</span>
@@ -47,7 +56,13 @@
             </div>
 
             <div class="section-body">
-                <img src="assets/icon/School.svg" alt="">
+                <!-- <img src="../assets/images/photo.png" class="photo" alt="photo of me"> -->
+                <div class="photo">
+
+                </div>
+
+
+
                 <div class="about-description">
                     <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
                     <zero-md class="markdown-description" src="database/static/brief-description.md">
@@ -106,39 +121,7 @@
         </section>
 
 
-        <footer>
-            <div class="footer-colum">
-                <p>Daniele Pedrazzoli</p>
-                <ul>
-                    <li><span>Electrical engineer</span></li>
-                    <li><span>Systems designer</span></li>
-                    <li><span>App developer</span></li>
-                </ul>
-            </div>
-
-            <div class="footer-colum">
-                <p>Pages</p>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/pages/About.html">About Me</a></li>
-                    <li><a href="/pages/Projects.html">Projects</a></li>
-                    <li><a href="/#contactMe">Contact Me</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-colum">
-                <p>Usefull links</p>
-
-                <div>
-                    <a href="https://github.com/DanielePedrazzoli" target="_blank"><img
-                            src="assets/icon/github-icon.svg" alt=""></a>
-                    <a href="https://www.linkedin.com" target="_blank"><img src="assets/icon/linkedin-icon.svg"
-                            alt=""></a>
-                    <a href="https://www.linkedin.com" target="_blank"><img src="assets/icon/mail-icon.svg" alt=""></a>
-                </div>
-            </div>
-
-        </footer>
+        <custom-footer></custom-footer>
     </main>
 
     <script defer>

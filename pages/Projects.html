@@ -8,7 +8,6 @@
 
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/nav.css">
-    <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/sections.css">
     <link rel="stylesheet" href="../styles/components/buttons.css">
     <link rel="stylesheet" href="../styles/components/project-card.css">
@@ -58,6 +57,7 @@
 
 
 <body>
+    <script type="module" src="/script/footer-element.js" defer></script>
     <script src="/script/navBar.js" defer></script>
 
     <div class="navbar-container" selected="Projects"> </div>
@@ -73,40 +73,7 @@
             </div>
         </section>
 
-        <footer>
-            <div class="footer-colum">
-                <p>Daniele Pedrazzoli</p>
-                <ul>
-                    <li><span>Electrical engineer</span></li>
-                    <li><span>Systems designer</span></li>
-                    <li><span>App developer</span></li>
-                </ul>
-            </div>
-
-            <div class="footer-colum">
-                <p>Pages</p>
-                <ul>
-                    <li><a href="/"">Home</a></li>
-                    <li><a href=" /pages/About.html">About Me</a></li>
-                    <li><a href="/pages/Projects.html">Projects</a></li>
-                    <li><a href="/#contactMe">Contact Me</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-colum">
-                <p>Usefull links</p>
-
-                <div>
-                    <a href="https://github.com/DanielePedrazzoli" target="_blank"><img
-                            src="../assets/icon/github-icon.svg" alt=""></a>
-                    <a href="https://www.linkedin.com" target="_blank"><img src="../assets/icon/linkedin-icon.svg"
-                            alt=""></a>
-                    <a href="https://www.linkedin.com" target="_blank"><img src="../assets/icon/mail-icon.svg"
-                            alt=""></a>
-                </div>
-            </div>
-
-        </footer>
+        <custom-footer></custom-footer>
 
     </main>
 
