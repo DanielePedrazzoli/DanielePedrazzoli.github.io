@@ -4,136 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-
+    <title>About me - Pedrazzoli Daniele</title>
     <link rel="stylesheet" href="../styles/common.css">
-    <link rel="stylesheet" href="../styles/nav.css">
-    <link rel="stylesheet" href="../styles/sections.css">
-    <link rel="stylesheet" href="../styles/components/buttons.css">
-    <link rel="stylesheet" href="../styles/Home/about-section.css">
-    <link rel="stylesheet" href="../styles/components/segmentedButton.css">
-    <style>
-        .carousel-container {
-            overflow: hidden;
-        }
-
-        .experience-section .section-body {
-            display: grid;
-            grid-template-columns: repeat(3, 100%);
-            width: 100%;
-            gap: 48px;
-            transform: translateX(calc((-100% - 48px) * var(--index)));
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .sub-section {
-            border: 1px solid var(--border-color);
-            padding: 32px;
-            border-radius: 4px;
-            display: flex;
-            flex-direction: column;
-            height: min-content;
-        }
-    </style>
+    <link rel="stylesheet" href="../styles/about/about.css">
+    <script src="../script/script_divider.js"></script>
+    <script src="../script/script_footer.js"></script>
+    <script src="../script/script_navbar.js"></script>
 </head>
 
 
+
 <body>
-    <script src="../script/segmentedButton.js" defer></script>
-    <script type="module" src="/script/footer-element.js" defer></script>
-    <script src="/script/navBar.js" defer></script>
+    <navbar-element></navbar-element>
 
-    <div class="navbar-container" selected="About Me"> </div>
     <main>
-        <section class="about-section">
-            <div class="section-head">
-                <p>Introduction</p>
-                <span>A brief introduction</span>
-            </div>
-
-            <div class="section-body">
-                <img src="../assets/images/photo.png" alt="">
+        <section class="more-about-me-container">
+            <div class="text-container">
+                <div class="section-title-container">
+                    <p class="section-title">More About me</p>
+                </div>
                 <div class="about-description">
                     <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
                     <zero-md class="markdown-description" src="../database/static/description.md">
                         <template>
-                            <link rel="stylesheet" href="/styles/markdonw/markdonw-styles.css" />
+                            <link rel="stylesheet" href="../styles/markdown/markdown-styles.css" />
                         </template>
                     </zero-md>
                 </div>
             </div>
-        </section>
-
-        <section class="experience-section">
-            <div class="section-head">
-                <p>Paths</p>
-            </div>
-            <div class="segmented-button">
-                <p>Studies</p>
-                <p>Works</p>
-                <p>Personal</p>
-            </div>
-
-            <div class="carousel-container">
-                <div class="section-body">
-                    <div class="sub-section">
-                        <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
-                        <zero-md class="markdown-description" src="../database/static/studies.md">
-                            <template>
-                                <link rel="stylesheet" href="../styles/markdonw/markdonw-styles.css" />
-                            </template>
-                        </zero-md>
-                    </div>
-                    <div class="sub-section">
-                        <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
-                        <zero-md class="markdown-description" src="../database/static/work.md">
-                            <template>
-                                <link rel="stylesheet" href="../styles/markdonw/markdonw-styles.css" />
-                            </template>
-                        </zero-md>
-                    </div>
-                    <div class="sub-section">
-                        <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
-                        <zero-md class="markdown-description" src="../database/static/personal.md">
-                            <template>
-                                <link rel="stylesheet" href="../styles/markdonw/markdonw-styles.css" />
-                            </template>
-                        </zero-md>
-                    </div>
-                </div>
+            <div class="image-container">
+                <img src="../assets/images/photo.png" alt="">
+                <small><i>Waiting for a better photo</i></small>
             </div>
         </section>
 
-        <section class="document-section">
-            <div class="section-head">
-                <p>Usefull documents</p>
-                <span>All document about me</span>
+        <section>
+            <div class="section-title-container">
+                <img src="../assets/icon/education.svg" alt="">
+                <p class="section-title">Education</p>
             </div>
-
-            <div class="section-body">
-                <ul>
-                    <li><a href="/assets/Documents/Pedrazzoli daniele CV-v1.pdf" download>Curriculum Vitae</a></li>
-
-                </ul>
+            <div class="about-description">
+                <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
+                <zero-md class="markdown-description" src="../database/static/studies.md">
+                    <template>
+                        <link rel="stylesheet" href="/styles/markdown/markdown-styles.css" />
+                    </template>
+                </zero-md>
             </div>
         </section>
 
+        <section>
+            <div class="section-title-container">
+                <img src="../assets/icon/work.svg" alt="">
+                <p class="section-title">Work experience</p>
+            </div>
+            <div class="about-description">
+                <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
+                <zero-md class="markdown-description" src="../database/static/work.md">
+                    <template>
+                        <link rel="stylesheet" href="/styles/markdown/markdown-styles.css" />
+                    </template>
+                </zero-md>
+            </div>
+        </section>
 
-        <custom-footer></custom-footer>
+        <custom-divider></custom-divider>
 
+        <section class="usefull-documents">
+            <div class="section-title-container">
+                <img src="../assets/icon/documents.svg" alt="">
+                <p class="section-title">Usefull documents</p>
+            </div>
+            <ul>
+                <li><a href="../assets/Documents/Pedrazzoli daniele CV-v1.pdf"
+                        download="CV Pedrazzoli Daniele (it)">Curriculim
+                        (IT)</a></li>
+                <li><a href="../assets/Documents/Pedrazzoli daniele CV-v1 en.pdf"
+                        download="CV Pedrazzoli Daniele (en)">Curriculim
+                        (EN)</a></li>
+            </ul>
+        </section>
     </main>
+    <footer-element></footer-element>
 
 </body>
-
-<script defer>
-
-
-    var secitonBody = document.querySelector(".experience-section").querySelector(".section-body");
-    function visualizeNewSection(index) {
-        secitonBody.style.setProperty('--index', index);
-    }
-
-
-</script>
 
 </html>

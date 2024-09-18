@@ -18,7 +18,7 @@
             "name": "Weather app with ble pump controll",
             "link": "https://github.com/DanielePedrazzoli/pump-action-app",
             "main_language": "Dart",
-            "platform": "Adroid",
+            "platform": "Android",
             "framework": "Flutter"
         }
     ]

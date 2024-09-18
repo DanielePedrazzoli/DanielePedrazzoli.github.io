@@ -58,8 +58,8 @@ class FooterElement extends HTMLElement {
 
 
         var externalLinks = [
-            { "dest": "https://github.com/DanielePedrazzoli", "src": "../assets/icon/github-icon.svg" },
-            { "dest": "https://www.linkedin.com/in/daniele-pedrazzoli-69799b291", "src": "../assets/icon/linkedin-svgrepo-com.svg" },
+            { "dest": "https://github.com/DanielePedrazzoli", "src": "../assets/icon/github-icon.svg", "alt": "github" },
+            { "dest": "https://www.linkedin.com/in/daniele-pedrazzoli-69799b291", "src": "../assets/icon/linkedin-svgrepo-com.svg", "alt": "linkedin" },
         ]
         var extenralLinkContainer = col3.appendChild(document.createElement("div"));
         extenralLinkContainer.setAttribute("class", "external-link-container");
@@ -69,14 +69,16 @@ class FooterElement extends HTMLElement {
             externalLink.target = "_blank";
             var externalLinkImg = externalLink.appendChild(document.createElement("img"));
             externalLinkImg.src = externalLinks[i].src;
+            externalLinkImg.alt = externalLinks[i].alt;
         }
 
 
         const style = document.createElement("style");
 
-        style.textContent = `footer {
-            padding: 32px 64px;
-            background-color: var(--primary-color);
+        style.textContent = `
+        footer {
+            padding: 16pt 64pt;
+            background-color: var(--surface);
             color: rgb(245, 245, 245);
             display: flex;
             justify-content: space-between;
@@ -92,32 +94,43 @@ class FooterElement extends HTMLElement {
         .footer-colum ul {
             margin: 0%;
             padding: 0%;
-            font-size: var(--font-size-body-small);
+            font-size: var(--small-font-size);  
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justyfy-content: stretch;
+            // gap: 4pt;
         }
 
 
         .footer-colum li {
-            list-style: none;
-            margin: 0%;
-            padding: 0%;
+            font-size: var(--small-font-size);
+            color:var(--body-text-color);
+            width: 100%;
+        }
+
+          .footer-colum li * {
+            width: 100%;
+            padding: 4pt 0pt;
+            display:block;
         }
 
         .footer-colum p {
             margin: 0%;
-            font-size: var(--font-size-body-large);
-            margin-bottom: 8px;
+            font-size: var(--body-font-size);
+            margin-bottom: 8pt;
             color: white;
-
         }
 
         .footer-colum span {
-            color: rgb(245, 245, 245);
-            font-size: var(--font-size-body-small);
+            color:var(--body-text-color);
+            font-size: var(--small-font-size);
         }
 
         footer a {
             text-decoration: none;
-            color: rgb(245, 245, 245);
+            color:var(--body-text-color);
+            font-size: var(--small-font-size);
         }
 
         footer div.external-link-container {
@@ -131,27 +144,23 @@ class FooterElement extends HTMLElement {
         footer div.external-link-container img {
             max-width: 24px;
             max-height: 24px;
-            filter: grayscale(70%);
             transition: all 0.2s ease-in-out;
         }
 
-        footer div.external-link-container img:hover {
-            filter: grayscale(0%);
-        }
 
-
-        @media (max-width: 768px) {
+        @media (max-width: 425px) {
             footer {
                 flex-direction: column;
-                gap: 48px;
+                gap: 32pt;
                 text-align: center;
                 align-items: center;
             }
 
+            footer div.external-link-container{
+                justify-content: center;}
         }
-
-
-        @media (max-width: 425px) {}`;
+            
+        `;
 
 
         wrapper.appendChild(col1);
@@ -166,4 +175,4 @@ class FooterElement extends HTMLElement {
 
 
 
-customElements.define("custom-footer", FooterElement);
+customElements.define("footer-element", FooterElement);

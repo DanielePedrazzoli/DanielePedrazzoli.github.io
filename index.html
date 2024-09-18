@@ -4,130 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <meta name="description"
+        content="I am Pedrazzoli Daniele, discover my portofolio whit all my projects and contact me if you want to work together" />
+    <title>Home - Pedrazzoli Daniele</title>
     <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/nav.css">
-    <link rel="stylesheet" href="styles/sections.css">
-    <link rel="stylesheet" href="styles/components/buttons.css">
-    <link rel="stylesheet" href="styles/Home/Hero-section.css">
-    <link rel="stylesheet" href="styles/Home/about-section.css">
-    <link rel="stylesheet" href="styles/Home/projects-section.css">
-    <link rel="stylesheet" href="styles/Home/contact-section.css">
-    <link rel="stylesheet" href="styles/Home/projects-section.css">
-    <link rel="stylesheet" href="styles/components/project-card.css">
-    <script src="database/projects.js" defer"></script>
-    <script src="/script/spinnerPlaceholder.js" defer"></script>
-    <script src="/script/projectCard.js" defer></script>
-    <style>
-
-    </style>
-
-    <script src="/script/navBar.js" defer></script>
-    <script type="module" src="/script/footer-element.js" defer></script>
+    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/home/home.css">
+    <script src="/script/script_navbar.js"></script>
+    <script src="/script/script_divider.js"></script>
+    <script src="/script/script_footer.js"></script>
+    <script src="database/projects.js"></script>
 </head>
-
 <style>
-    div.photo {
-        background-image: url("../assets/images/photo.png");
-        background-size: 110%;
-        background-repeat: no-repeat;
-        background-position: center top;
-        height: 250px;
-        aspect-ratio: 1 / 1;
-    }
 </style>
 
-
 <body>
-    <div class="navbar-container" selected="Home"> </div>
-
+    <navbar-element></navbar-element>
     <main>
-        <section class="title-section">
-            <p>Pedrazzoli Daniele</p>
-            <span>Electrical Engineer</span>
-            <a href="#contactMe" class="button filled">Contact Me</a>
-        </section>
-
-
-        <section class="about-section">
-            <div class="section-head">
-                <p>About Me</p>
-                <span>A brief introduction</span>
-            </div>
-
-            <div class="section-body">
-                <!-- <img src="../assets/images/photo.png" class="photo" alt="photo of me"> -->
-                <div class="photo">
-
+        <section class="landing">
+            <div class="header">
+                <div class="header-text-container">
+                    <div class="header-title-container">
+                        <img src="assets/icon/wawing haned emoticon.svg" alt="">
+                        <p class="header-title">Hi, I’m Pedrazzoli Daniele </p>
+                    </div>
+                    <div class="header-body-text-container">
+                        <span class="header-text">
+                            Recent graduate in Electronic Engineering with experience in designing microcontroller-based
+                            systems and developing iOS, Android, and desktop applications for interfacing.
+                            Quick learner, motivated to explore new technologies in electronics and computer science
+                        </span>
+                        <span class="header-text">
+                            Recent graduate in Electronic Engineering with experience in designing microcontroller-based
+                            systems and developing iOS, Android, and desktop applications for interfacing.
+                            Quick learner, motivated to explore new technologies in electronics and computer science
+                        </span>
+                    </div>
                 </div>
-
-
-
-                <div class="about-description">
-                    <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
-                    <zero-md class="markdown-description" src="database/static/brief-description.md">
-                        <template>
-                            <link rel="stylesheet" href="/styles/markdonw/markdonw-styles.css" />
-                        </template>
-                    </zero-md>
-                    <a class="button filled" href="/pages/About.html">Read more</a>
+                <div class="header-button-container">
+                    <a class="button outlined" href="#recent-projects">View my projects</a>
+                    <a class="button filled" href="#contactMe">Contact Me</a>
                 </div>
             </div>
+
+
+            <!-- iframe for animated or img for static -->
+            <!-- <img src="new assets/landing animated.svg" alt=""> -->
+            <iframe src="assets/images/landing animated.html" title="landing-page-animation" frameborder="0"></iframe>
         </section>
 
+        <custom-divider></custom-divider>
 
-        <section class="projects-section">
-            <div class="section-head">
-                <p>Projects</p>
-                <span>Most recent updated project</span>
+        <section class="projects" id="recent-projects">
+            <div class="projects-title">
+                <p>My projects</p>
             </div>
 
-            <div class="section-body"></div>
+            <div class="projects-list-container">
+                <!-- Code generated -->
+            </div>
+
         </section>
 
-        <section class="contact-section" id="contactMe">
-            <div class="section-head">
+        <custom-divider></custom-divider>
+
+        <section id="contactMe" class="contact">
+            <div class="contact-title">
                 <p>Contact Me</p>
             </div>
 
-            <div class="section-body">
-                <form class="contact-form" method="post"
-                    action="https://forms.un-static.com/forms/8d74d94c5bfed8e36ef6a0c439d9056734d6d249">
-                    <div class="contact-form-field">
-                        <p>Name</p>
-                        <input type="text" name="name" id="contact-name" placeholder="Value" required>
-                    </div>
-                    <div class="contact-form-field">
-                        <p>Surname</p>
-                        <input type="text" name="surname" id="contact-surname" placeholder="Value" required>
-                    </div>
-                    <div class="contact-form-field">
-                        <p>Email</p>
-                        <input type="text" name="mail" id="contact-mail" placeholder="Value" required>
-                    </div>
-                    <div class="contact-form-field">
-                        <p>Message</p>
-                        <textarea type="text" name="message" id="contact-messages" placeholder="Value" rows="7"
-                            required></textarea>
-                    </div>
-                    <button type="submit" id="submitForm" class="button filled">Send</button>
+            <form class="contact-form" method="post"
+                action="https://forms.un-static.com/forms/8d74d94c5bfed8e36ef6a0c439d9056734d6d249">
+                <div class="contact-form-field">
+                    <p>Name</p>
+                    <input type="text" name="name" id="contact-name" placeholder="Value" required>
+                </div>
+                <div class="contact-form-field">
+                    <p>Surname</p>
+                    <input type="text" name="surname" id="contact-surname" placeholder="Value" required>
+                </div>
+                <div class="contact-form-field">
+                    <p>Email</p>
+                    <input type="text" name="mail" id="contact-mail" placeholder="Value" required>
+                </div>
+                <div class="contact-form-field">
+                    <p>Message</p>
+                    <textarea type="text" name="message" id="contact-messages" placeholder="Value" rows="7"
+                        required></textarea>
+                </div>
+                <div class="form-button-container">
                     <span class="un-static-banner">
                         <span>(Powered by</span>
-                        <a rel="nofollow" href="Un-static Forms">Un-static Forms</a>
+                        <a rel="nofollow" href="https://un-static.com/" target="_blank">Un-static Forms</a>
                         <span>)</span>
                     </span>
-                </form>
-            </div>
+                    <button type="submit" id="submitForm" class="button outlined">
+                        <div>Send mail</div>
+                        <img src="assets/icon/send-mail.svg" alt="">
+                    </button>
+                </div>
+
+            </form>
+
+
         </section>
-
-
-        <custom-footer></custom-footer>
     </main>
+    <footer-element></footer-element>
 
     <script defer>
 
         window.onload = () => {
-            var parent = document.querySelector(".projects-section .section-body");
+            var parent = document.querySelector(".projects-list-container");
 
             const projectsArray = Object.keys(projects).map(key => ({
                 key: key,
@@ -148,20 +135,40 @@
                 [project.key]: project
             }));
 
-            // Stampare i risultati
-            console.log(lastEditedProjects);
 
             lastEditedProjects.forEach((projectData) => {
                 var key = Object.keys(projectData)[0];
-                var cards = new ProjectCard(parent, projectData[key], key);
+                var exhibitor = document.createElement("div");
+                exhibitor.classList.add("projects-exhibitor");
+                parent.appendChild(exhibitor);
+
+                var container = exhibitor.appendChild(document.createElement("div"));
+                container.classList.add("project-container");
+
+                var name = key.replaceAll("_", " ");
+                name = name.charAt(0).toUpperCase() + name.slice(1);
+
+                container.innerHTML = `
+                <div class="project-text-container">
+                    <p class="projects-name">${name}</p>
+                    <span>${projectData[key].briefDescription}</span>
+                </div>
+                <a class="button outlined" href = "../pages/Project-display.html?projectName=${key}">Read more about this project</a>`
+
+                var img = exhibitor.appendChild(document.createElement("img"));
+                img.src = projectData[key].banner;
+                img.alt = name + "_banner";
+
+                if (projectData[key].banner != "") {
+                    img.src = "../assets/Project-images/" + projectData[key].banner
+                } else {
+                    img.src = "https://picsum.photos/200"
+                }
 
             })
 
         }
-
     </script>
 </body>
-
-
 
 </html>

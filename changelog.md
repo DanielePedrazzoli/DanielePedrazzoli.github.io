@@ -1,3 +1,7 @@
+# 2.0.0
+- Changed all the style of the site making it more modern and simple.
+- Updated some projects
+
 # 1.0.0
 - Added image of me and my CV that can now be donwloaded
 - Improved the footer of the page using the custom element in HTML. This will drastically reduce the mantaining of the HTML code

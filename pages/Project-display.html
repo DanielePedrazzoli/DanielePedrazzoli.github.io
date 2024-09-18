@@ -11,153 +11,15 @@
     <link rel="stylesheet" href="../styles/sections.css">
     <link rel="stylesheet" href="../styles/components/buttons.css">
     <script src="../database/projects.js" defer></script>
-
-    <style>
-        .header-section {
-            display: grid;
-            grid-template-columns: 3fr 5fr;
-            padding-bottom: 24px;
-        }
-
-        .header-section .information-container {
-            width: 100%;
-        }
-
-        .information-container {
-            display: flex;
-            align-items: start;
-            flex-direction: column;
-        }
-
-
-        .information-container .project-name {
-            margin: 0%;
-            font-size: var(--font-size-subtitle);
-        }
-
-
-        .project-information {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            font-size: var(--font-size-lable);
-            color: grey;
-            margin-bottom: 32px;
-        }
-
-
-        .header-section .banner-container {
-            width: 100%;
-        }
-
-        .banner-container img {
-            width: 100%;
-            max-height: 350px;
-            object-fit: cover;
-            border-radius: 8px;
-            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-        }
-
-        @media (max-width: 425px) {
-
-            .header-section {
-                display: grid;
-                grid-template-columns: 100%;
-                padding-bottom: 24px;
-            }
-        }
-    </style>
-
-
-    <style>
-        .tag-container {
-            display: flex;
-            gap: 16px;
-            align-items: center;
-            flex-wrap: wrap;
-
-        }
-
-        .tag {
-            text-align: center;
-            padding: 4px 16px;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-            font-size: var(--font-size-lable);
-            color: white;
-        }
-
-        .coding {
-            background-color: rgb(33, 93, 133);
-
-        }
-
-        .elettronics {
-            background-color: rgb(219, 151, 6);
-        }
-
-        .platform {
-            background-color: rgb(121, 44, 154);
-        }
-    </style>
-
-    <style>
-        .description-section .section-body {
-            gap: 0px;
-        }
-
-        .description-paragraph {
-            margin: 16px 0px;
-        }
-
-        .description-paragraph p {
-            font-size: var(--font-size-body-large);
-            margin: 8px 0px;
-            color: var(--primary-color);
-            /* font-weight: 400; */
-        }
-
-        .description-paragraph {
-            font-size: var(--font-size-body);
-            letter-spacing: -0.1px;
-        }
-    </style>
-
-    <style>
-        .repository-section .section-body {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 0px;
-
-        }
-
-        .repository-section .section-body * {
-            border: 1px solid var(--border-color);
-            border-left: none;
-            border-top: none;
-            padding: 6px;
-            text-align: center;
-        }
-
-        .repository-section .section-body *:nth-child(4n+1) {
-            border-left: 1px solid var(--border-color);
-        }
-
-        .repository-section .section-body *:nth-child(-n+4) {
-            background-color: var(--primary-color);
-            color: white;
-            font-weight: normal;
-            border-top: 1px solid var(--border-color);
-        }
-    </style>
+    <link rel="stylesheet" href="../styles/projects/projects-inspect.css">
 </head>
 
-
 <body>
+    <script src="../script/script_divider.js"></script>
+    <script src="../script/script_footer.js"></script>
+    <script src="../script/script_navbar.js"></script>
 
-    <script src="/script/navBar.js" defer></script>
-    <script type="module" src="/script/footer-element.js" defer></script>
-    <div class="navbar-container" selected="Projects"> </div>
+    <navbar-element></navbar-element>
 
     <main>
         <section class="header-section">
@@ -171,34 +33,30 @@
                         last update: <span id="last-update">12/12/2020</span>
                     </span>
                 </div>
-                <div class="tag-container">
-                    <!-- <span class="tag coding">Web desing</span> -->
-                </div>
             </div>
-
         </section>
 
-
+        <custom-divider></custom-divider>
         <section class="description-section">
             <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
             <zero-md class="markdown-description" src="/Projects/Pump_erogation/desc.md">
                 <template>
-                    <link rel="stylesheet" href="/styles/markdonw/markdonw-styles.css" />
+                    <link rel="stylesheet" href="/styles/markdown/markdown-styles.css" />
                     <style>
                         h1 {
-                            font-size: var(--font-size-body-large);
+                            font-size: var(--parapgraph-font-size);
                             color: var(--primary-color);
                             margin-top: 48px;
-                            margin-bottom: -8px;
                         }
                     </style>
                 </template>
             </zero-md>
         </section>
 
+        <custom-divider></custom-divider>
 
         <section class="repository-section">
-            <div class="section-head">
+            <div class="section-title">
                 <p>Repository</p>
             </div>
 
@@ -210,10 +68,9 @@
             </div>
         </section>
 
-        <custom-footer></custom-footer>
-
 
     </main>
+    <footer-element></footer-element>
 
     <script defer>
 
@@ -221,7 +78,7 @@
         window.onload = () => {
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
-            const projectData = projects[urlParams.get('project')];
+            const projectData = projects[urlParams.get('projectName')];
 
             document.querySelector("#DocumentTitle").innerText = "Projects -" + projectData.name
 

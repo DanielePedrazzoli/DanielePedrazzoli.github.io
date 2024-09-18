@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page not found</title>
+    <title>Page not found - Pedrazzoli Daniele</title>
     <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/components/buttons.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+    <script src="script/script_footer.js"></script>
     <style>
-        body {
+        /* body {
             min-height: 100vh;
             display: grid;
             grid-template-rows: 1fr auto;
@@ -57,62 +57,64 @@
 
         .link-container {
             margin-top: 1rem;
+        } */
+
+        section {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 32pt;
+        }
+
+        section img {
+            width: 300pt;
+        }
+
+        p {
+            font-size: var(--parapgraph-font-size);
+            color: var(--title-color);
+        }
+
+        .content-description span {
+            font-size: var(--body-font-size);
+        }
+
+        .content-description {
+            display: flex;
+            flex-direction: column;
+            gap: 4pt;
+            align-items: center
+        }
+
+        .content-description a {
+            /* text-decoration: none; */
+            color: var(--secondary-color);
         }
     </style>
 </head>
 
 <body>
-    <div class="content">
-        <div class="img-container">
-            <img src="/assets/images/404 error.svg" alt="">
-            <a href="https://storyset.com/online" target="_blank">Online illustrations by Storyset</a>
-        </div>
-        <h2>The page you are looking for does not exist</h2>
-        <div class="content-description">
-            <span>If you are searching for a project you can go to <a href="/pages/Projects.html">Projects</a>.</span>
-            <span> If the a link is broken and send you here, please contact me through <a
-                    href="/#contactMe">Contact</a></span>
-        </div>
-
-        <div class="link-container">
-            <a class="button outlined" href="/">Home page</a>
-        </div>
-
-    </div>
-
-
-    <footer>
-        <div class="footer-colum">
-            <p>Daniele Pedrazzoli</p>
-            <ul>
-                <li><span>Electrical engineer</span></li>
-                <li><span>Systems designer</span></li>
-                <li><span>App developer</span></li>
-            </ul>
-        </div>
-
-        <div class="footer-colum">
-            <p>Pages</p>
-            <ul>
-                <li><a href="/"">Home</a></li>
-                <li><a href=" /pages/About.html">About Me</a></li>
-                <li><a href="/pages/Projects.html">Projects</a></li>
-                <li><a href="/#contactMe">Contact Me</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-colum">
-            <p>Usefull links</p>
-
-            <div>
-                <a href="https://github.com/DanielePedrazzoli" target="_blank"><img src="../assets/icon/github-icon.svg"
-                        alt=""></a>
-                <a href="https://www.linkedin.com/in/daniele-pedrazzoli-69799b291" target="_blank"><img
-                        src="../assets/icon/linkedin-svgrepo-com.svg" alt=""></a>
+    <main>
+        <section>
+            <div class="img-container">
+                <img src="/assets/images/404.svg" alt="">
             </div>
-        </div>
+            <p>The page you are looking for does not exist</p>
+            <div class="content-description">
+                <span>If you are searching for a project you can go to <a
+                        href="/pages/Projects.html">Projects</a>.</span>
+                <span> If the a link is broken and send you here, please contact me through <a
+                        href="/#contactMe">Contact</a></span>
+            </div>
 
-    </footer>
+            <div class="link-container">
+                <a class="button outlined" href="/">Home page</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer-element></footer-element>
 
 </body>
 

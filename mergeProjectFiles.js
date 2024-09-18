@@ -17,7 +17,7 @@ async function main() {
 
         var fileContent = await fs.readFile("./Projects/" + info.descriptionLocation, "utf8");
 
-        info.briefDescription = fileContent.substring(0, 75) + "...";
+        info.briefDescription = fileContent.substring(0, 500) + "...";
 
         mergeContent[project] = info
 

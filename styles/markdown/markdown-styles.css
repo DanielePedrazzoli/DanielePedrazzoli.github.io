@@ -1,0 +1,21 @@
+* {
+    font-size: var(--body-font-size);
+    /* line-height: 32px; */
+    line-height: 1.8rem;
+
+}
+
+strong {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+a {
+    color: var(--body-text-color);
+    transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+    color: var(--title-color);
+
+}

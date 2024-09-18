@@ -1,0 +1,45 @@
+body,
+html {
+    /* overflow: hidden; */
+    margin: 0%;
+    height: 100vh;
+    scrollbar-width: thin;
+}
+
+main {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32pt;
+    flex: 100%;
+}
+
+p {
+    margin: 0%;
+    font-size: var(--parapgraph-font-size);
+    color: var(--title-color);
+}
+
+span {
+    font-size: var(--body-font-size);
+}
+
+img {
+    height: 350px;
+}
+
+.text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8pt;
+
+}

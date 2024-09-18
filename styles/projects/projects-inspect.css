@@ -1,0 +1,69 @@
+.header-section {
+    display: grid;
+    align-items: stretch;
+    justify-content: stretch;
+    grid-template-columns: 0.5fr auto;
+    gap: 32pt;
+}
+
+.header-section .banner-container {
+    width: 100%;
+    border-radius: 16pt;
+}
+
+.header-section .banner-container img {
+    width: 100%;
+    border-radius: 16pt;
+}
+
+
+.information-container p {
+    font-size: var(--section-title-font-size);
+    margin: 0%;
+    color: var(--title-color);
+}
+
+.information-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8pt;
+}
+
+@media screen and (max-width: 1024px) {
+    .header-section {
+        grid-template-columns: unset;
+    }
+}
+
+/*********************************************/
+
+.repository-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32pt;
+}
+
+.section-title {
+    font-size: var(--section-title-font-size);
+    color: var(--title-color);
+}
+
+.section-body {
+    display: grid;
+    grid-template-columns: repeat(4, calc((100%) / 4));
+    overflow: auto;
+    width: 100%;
+}
+
+.section-body span:nth-child(-n+4) {
+    background-color: var(--secondary-color);
+    color: var(--title-color);
+    font-weight: bold;
+}
+
+.section-body span,
+.section-body a {
+    border: 1px solid var(--border-color);
+    padding: 8pt;
+    color: var(--body-color);
+}
