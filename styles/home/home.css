@@ -14,6 +14,7 @@ section.landing>img {
     padding-right: 32pt;
     animation: Appear 0.5s linear forwards;
     opacity: 0;
+    z-index: -1;
 }
 
 .header {
