@@ -12,6 +12,8 @@ section.landing>img {
     min-height: 400px;
     aspect-ratio: 1/1;
     padding-right: 32pt;
+    animation: Appear 0.5s linear forwards;
+    opacity: 0;
 }
 
 .header {
@@ -382,5 +384,17 @@ section.contact {
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+}
+
+/****************************/
+
+@keyframes Appear {
+    form {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
