@@ -95,5 +95,24 @@ const projects = {
       }
     ],
     "briefDescription": "This project is my final project for my thesis. It is a step counter device that detects the user's movement and estimates the distance covered.\r\n\r\n# MPU6050\r\n\r\nStep recognition is done by analyzing the accelerometer and gyroscope data provided by the MPU6050 sensor. This sensor is a 6-axis accelerometer with a small FIFO onboard to which the data are sent after being acquired. The sensor also has a Digital Motion Processor (DMP) that calculates the quaternion based on the sampled data and saves..."
+  },
+  "personal_web_site": {
+    "name": "Personal web with github pages",
+    "banner": "personal-web-site.webp",
+    "completed": true,
+    "last-update": "12/09/2024",
+    "descriptionLocation": "/personal_web_site/desc.md",
+    "tags": [],
+    "documets": [],
+    "repository": [
+      {
+        "name": "DanielePedrazzoli.github.io",
+        "link": "https://github.com/DanielePedrazzoli/DanielePedrazzoli.github.io",
+        "main_language": "HTML",
+        "platform": "Web",
+        "framework": "none"
+      }
+    ],
+    "briefDescription": "This is the project for my personal website, published on my public GitHub ..."
   }
 }
