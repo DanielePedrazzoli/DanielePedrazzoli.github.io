@@ -1,0 +1,3 @@
+This project is my personal website, hosted on GitHub. Built using HTML, CSS, and JavaScript, it features an internal database that stores project data in JSON and Markdown files.
+
+As the site evolved, I enhanced the user experience by adding dynamic SVG animations with a Figma extension. Projects are displayed in a dynamic card layout using JavaScript, and the project database is managed by a custom Node.js script, which automatically updates through GitHub Actions.

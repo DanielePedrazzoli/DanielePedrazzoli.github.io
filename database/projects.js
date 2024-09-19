@@ -1,10 +1,31 @@
 const projects = {
+  "personal_web_site": {
+    "name": "Personal web with github pages",
+    "banner": "personal-web-site.webp",
+    "completed": true,
+    "last-update": "19/09/2024",
+    "descriptionLocation": "/personal_web_site/desc.md",
+    "briefDescriptionLocation": "brief-description.md",
+    "tags": [],
+    "documets": [],
+    "repository": [
+      {
+        "name": "DanielePedrazzoli.github.io",
+        "link": "https://github.com/DanielePedrazzoli/DanielePedrazzoli.github.io",
+        "main_language": "HTML",
+        "platform": "Web",
+        "framework": "none"
+      }
+    ],
+    "briefDescription": "This project is my personal website, hosted on GitHub. Built using HTML, CSS, and JavaScript, it features an internal database that stores project data in JSON and Markdown files.\r\n\r\nAs the site evolved, I enhanced the user experience by adding dynamic SVG animations with a Figma extension. Projects are displayed in a dynamic card layout using JavaScript, and the project database is managed by a custom Node.js script, which automatically updates through GitHub Actions."
+  },
   "Pump_erogation": {
     "name": "Pump erogation",
     "banner": "pump_erogation.webp",
     "completed": false,
     "last-update": "05/07/2024",
     "descriptionLocation": "/Pump_erogation/desc.md",
+    "briefDescriptionLocation": "brief-description.md",
     "tags": [],
     "documets": [],
     "repository": [
@@ -23,7 +44,7 @@ const projects = {
         "framework": "Flutter"
       }
     ],
-    "briefDescription": "This project aims to use an ESP32 board to control an external irrigation pump during the summer. The board connects to a WiFi network to obtain local weather information and set up an RTC (Real-Time Clock).\n\nUsing an application developed in Flutter, it is possible to configure all the pump parameters via BLE (Bluetooth Low Energy).\n\n# ESP32 Program\nThe program uses the ESP32 Preferences library to store values beyond the current session (in case the device needs to be turned off). On the first..."
+    "briefDescription": "This project uses an ESP32 board to control an irrigation pump during summer. The board connects to WiFi to fetch weather data and set an RTC (Real-Time Clock). Pump settings are configured via BLE using a Flutter app.\r\nThe ESP32 stores data and scans for WiFi on the first startup. Irrigation timing is based on weather forecasts via an API. The Flutter app lets users set rain thresholds, irrigation times, and manually control the pump."
   },
   "Serial_plotter": {
     "name": "Serial plotter",
@@ -31,6 +52,7 @@ const projects = {
     "completed": false,
     "last-update": "12/09/2024",
     "descriptionLocation": "/Serial_plotter/desc.md",
+    "briefDescriptionLocation": "brief-description.md",
     "tags": [],
     "documets": [],
     "repository": [
@@ -42,7 +64,7 @@ const projects = {
         "framework": "Flutter"
       }
     ],
-    "briefDescription": "This project is a \"Serial Plotter\" capable of graphically displaying data received from a serial device connected to the computer (e.g., a microcontroller).\n\n# Application\n\nThe application was developed using Flutter and leverages the following libraries:\n- ##### [Flutter_libserialport](https://pub.dev/packages/flutter_libserialport)\nUsed for scanning, connecting, and communicating with the computer's serial ports.\n\n- ##### [syncfusion_flutter_charts](https://pub.dev/packages/syncfusion_flutter_..."
+    "briefDescription": "This project is a \"Serial Plotter\" built with Flutter to graphically display data from serial devices (e.g., microcontrollers) connected to a computer. Inspired by the Arduino Serial Monitor tool, it connects to serial ports, reads data, and plots it. All messages are stored, but only those starting with a specific character are plotted. The rest are saved for reference. This tool provides a simple and efficient way to visualize real-time data from serial communication."
   },
   "Step_counter": {
     "name": "Step counter",
@@ -50,6 +72,7 @@ const projects = {
     "completed": false,
     "last-update": "05/07/2024",
     "descriptionLocation": "/Step_counter/desc.md",
+    "briefDescriptionLocation": "brief-description.md",
     "tags": [],
     "documets": [],
     "repository": [
@@ -75,25 +98,6 @@ const projects = {
         "framework": "Flutter"
       }
     ],
-    "briefDescription": "This project is my final project for my thesis. It is a step counter device that detects the user's movement and estimates the distance covered.\n\n# MPU6050\n\nStep recognition is done by analyzing the accelerometer and gyroscope data provided by the MPU6050 sensor. This sensor is a 6-axis accelerometer with a small FIFO onboard to which the data are sent after being acquired. The sensor also has a Digital Motion Processor (DMP) that calculates the quaternion based on the sampled data and saves the..."
-  },
-  "personal_web_site": {
-    "name": "Personal web with github pages",
-    "banner": "personal-web-site.webp",
-    "completed": true,
-    "last-update": "12/09/2024",
-    "descriptionLocation": "/personal_web_site/desc.md",
-    "tags": [],
-    "documets": [],
-    "repository": [
-      {
-        "name": "DanielePedrazzoli.github.io",
-        "link": "https://github.com/DanielePedrazzoli/DanielePedrazzoli.github.io",
-        "main_language": "HTML",
-        "platform": "Web",
-        "framework": "none"
-      }
-    ],
-    "briefDescription": "This is the project for my personal website, hosted on my public GitHub page. The site is entirely built using HTML, CSS, and JavaScript, and features an internal database system based on JSON and Markdown files. In the initial version 1.0.0, I chose to avoid the use of any external libraries or frameworks to maintain a minimalist approach and gain a deeper understanding of fundamental web technologies.\n\nAs the project evolved, I decided to enhance the user experience by adding a more dynamic an..."
+    "briefDescription": "This project is my thesis final, featuring a step counter device. It uses the MPU6050 sensor to detect user movement and estimate distance. The MPU6050, a 6-axis accelerometer and gyroscope, sends data to the ESP32 via I2C. The ESP32 processes this data, leveraging its Digital Motion Processor (DMP) to recognize steps by analyzing and filtering the accelerometer data, while removing gravitational effects for accurate step detection."
   }
 }

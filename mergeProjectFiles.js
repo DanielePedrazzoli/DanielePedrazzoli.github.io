@@ -12,19 +12,15 @@ async function main() {
         console.log(project)
 
         var info = JSON.parse(await fs.readFile(projectPath + "/" + project + "/info.json", "utf8"));
-
         info.descriptionLocation = "/" + project + "/" + info.descriptionLocation
-
-        var fileContent = await fs.readFile("./Projects/" + info.descriptionLocation, "utf8");
-
-        info.briefDescription = fileContent.substring(0, 500) + "...";
-
+        var fileContent = await fs.readFile("./Projects/" + project + "/" + info.briefDescriptionLocation, "utf8");
+        info.briefDescription = fileContent
         mergeContent[project] = info
 
     }
 
     var result = await fs.writeFile("./database/projects.js", "const projects = " + JSON.stringify(mergeContent, null, 2));
-    console.log(result);
+    // console.log(result);
     console.log("done");
 
 }

@@ -1,3 +1,8 @@
+# 2.1.0
+- Updated how brief description are handled. Now there is a file markwdown that is readed and put into the json file
+This brief description allow a better visual rappresentation inside the project card
+
+
 # 2.0.0
 - Changed all the style of the site making it more modern and simple.
 - Updated some projects

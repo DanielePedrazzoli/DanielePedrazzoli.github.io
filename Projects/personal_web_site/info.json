@@ -2,8 +2,9 @@
     "name": "Personal web with github pages",
     "banner": "personal-web-site.webp",
     "completed": true,
-    "last-update": "12/09/2024",
+    "last-update": "19/09/2024",
     "descriptionLocation": "desc.md",
+    "briefDescriptionLocation": "brief-description.md",
     "tags": [],
     "documets": [],
     "repository": [

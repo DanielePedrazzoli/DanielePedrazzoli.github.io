@@ -1,0 +1,2 @@
+This project uses an ESP32 board to control an irrigation pump during summer. The board connects to WiFi to fetch weather data and set an RTC (Real-Time Clock). Pump settings are configured via BLE using a Flutter app.
+The ESP32 stores data and scans for WiFi on the first startup. Irrigation timing is based on weather forecasts via an API. The Flutter app lets users set rain thresholds, irrigation times, and manually control the pump.
