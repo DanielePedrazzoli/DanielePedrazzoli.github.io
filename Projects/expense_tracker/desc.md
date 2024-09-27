@@ -4,7 +4,7 @@ Although simple in its design, this project gave me the opportunity to start wor
 This project is not done yet, it has still more work to do.
 The main page is stil empty and some bug are present, but now is in a usable form.
 
-## Database
+# Database
 
 The project leverages the Isar package for database management. Isar is a noSQL database that enables the storage of schemas, which correspond to the classes used within the application. To use this database, schemas must be initialized with tags such as:
 ```dart
@@ -16,7 +16,7 @@ Isar offers extensive filtering options and, according to its website, its very 
 
 
 
-## Testing
+# Testing
 
 As part of this project, I explored Flutter's integration test features and packages. While i have previously worked with unit tests but they have limitations in scope. Integration testing, on the other hand, allows you to simulate real-world user interactions, providing a more comprehensive testing experience.
 
