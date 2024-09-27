@@ -82,7 +82,7 @@ const projects = {
   },
   "expense_tracker": {
     "name": "Expense tracker",
-    "banner": "expense_tracker.webp",
+    "banner": "/Expense_tracker/banner.webp",
     "completed": true,
     "last-update": "27/09/2024",
     "descriptionLocation": "/expense_tracker/desc.md",
