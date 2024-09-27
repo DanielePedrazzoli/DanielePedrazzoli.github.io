@@ -80,11 +80,31 @@ const projects = {
     ],
     "briefDescription": "This project is my thesis final, featuring a step counter device. It uses the MPU6050 sensor to detect user movement and estimate distance. The MPU6050, a 6-axis accelerometer and gyroscope, sends data to the ESP32 via I2C. The ESP32 processes this data, leveraging its Digital Motion Processor (DMP) to recognize steps by analyzing and filtering the accelerometer data, while removing gravitational effects for accurate step detection."
   },
+  "expense_tracker": {
+    "name": "Expense tracker",
+    "banner": "expense_tracker.webp",
+    "completed": true,
+    "last-update": "27/09/2024",
+    "descriptionLocation": "/expense_tracker/desc.md",
+    "briefDescriptionLocation": "brief-description.md",
+    "tags": [],
+    "documets": [],
+    "repository": [
+      {
+        "name": "Expense-tracker",
+        "link": "https://github.com/DanielePedrazzoli/Expense-tracker",
+        "main_language": "dart",
+        "platform": "Android/IOS",
+        "framework": "Flutter"
+      }
+    ],
+    "briefDescription": "This project manage financial transaction tracking with a local database, allowing users to tag, name, and describe each entry for better organization.\nBuilt using Flutter and the Isar noSQL database, it offers robust data filtering and exceptional speed. I also explored integration testing to simulate real user interactions. This project provided a hands-on experience with Flutter’s database and testing capabilities, laying the groundwork for future, more advanced applications."
+  },
   "personal_web_site": {
     "name": "Personal web with github pages",
     "banner": "personal-web-site.webp",
     "completed": true,
-    "last-update": "19/09/2024",
+    "last-update": "27/09/2024",
     "descriptionLocation": "/personal_web_site/desc.md",
     "briefDescriptionLocation": "brief-description.md",
     "tags": [],
