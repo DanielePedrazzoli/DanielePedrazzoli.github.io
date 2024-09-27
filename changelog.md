@@ -1,3 +1,6 @@
+# 2.2.0
+- Added new project `Expense_tracker`
+
 # 2.1.0
 - Updated how brief description are handled. Now there is a file markwdown that is readed and put into the json file
 This brief description allow a better visual rappresentation inside the project card

@@ -1,0 +1,19 @@
+{
+    "name": "Expense tracker",
+    "banner": "expense_tracker.webp",
+    "completed": true,
+    "last-update": "27/09/2024",
+    "descriptionLocation": "desc.md",
+    "briefDescriptionLocation": "brief-description.md",
+    "tags": [],
+    "documets": [],
+    "repository": [
+        {
+            "name": "Expense-tracker",
+            "link": "https://github.com/DanielePedrazzoli/Expense-tracker",
+            "main_language": "dart",
+            "platform": "Android/IOS",
+            "framework": "Flutter"
+        }
+    ]
+}

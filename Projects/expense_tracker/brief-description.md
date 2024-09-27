@@ -1,0 +1,2 @@
+This project manage financial transaction tracking with a local database, allowing users to tag, name, and describe each entry for better organization.
+Built using Flutter and the Isar noSQL database, it offers robust data filtering and exceptional speed. I also explored integration testing to simulate real user interactions. This project provided a hands-on experience with Flutter’s database and testing capabilities, laying the groundwork for future, more advanced applications.
