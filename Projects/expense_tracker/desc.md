@@ -1,6 +1,9 @@
 This project enables efficient tracking of financial transactions, allowing users to save each movement in a local database. Every transaction can be tagged, named, or further described for enhanced organization and clarity.
 Although simple in its design, this project gave me the opportunity to start working with Flutter’s database packages, particularly Isar.
 
+This project is not done yet, it has still more work to do.
+The main page is stil empty and some bug are present, but now is in a usable form.
+
 ## Database
 
 The project leverages the Isar package for database management. Isar is a noSQL database that enables the storage of schemas, which correspond to the classes used within the application. To use this database, schemas must be initialized with tags such as:
