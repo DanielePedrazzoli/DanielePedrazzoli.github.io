@@ -1,3 +1,8 @@
+# 2.2.1
+- Added work position
+- Fixed a color bug during a link visualization
+
+
 # 2.2.0
 - Added new project `Expense_tracker`
 

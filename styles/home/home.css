@@ -74,6 +74,12 @@ divider {
     width: 80%;
 }
 
+.header-text a,
+.header-text a:visited {
+    color: var(--primary-color);
+
+}
+
 
 /****************************/
 
